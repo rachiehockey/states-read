@@ -38,7 +38,9 @@ assessment type| computer-adaptive
 time required| 15-18
 alignment to other assessments| Early Assessment of Reading Skills, STAAR
 National Center for Intensive Intervention Rating for Fall of 1st grade| Convincing Evidence of Classificatio Accuracy
-Coverage of recommended skill areas| R, L, P, SP, N, O, M
+Vocabulary| Vocabulary
+Fluency and Comprehension| Oral Reading Fluency, reading and listening comprehension
+Coverage of recommended skill areas| R, L, P, E, N, O, M
 
 id|DI
 name|DIBELS 8th Edition/ mClass
@@ -136,4 +138,3 @@ time required| 15-18
 alignment to other assessments| Early Assessment of Reading Skills, STAAR
 National Center for Intensive Intervention Rating for Fall of 1st grade| Convincing Evidence of Classificatio Accuracy
 Coverage of recommended skill areas| R, L, P, SP, N, O, M
-

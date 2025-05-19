@@ -2,12 +2,14 @@ import {
   setDetails,
   clearDetails,
   enterTableMode,
-  enterMapMode,
   formatSingleStatePill,
   highlightStates,
-  showKeyValueIfDefined
+  showKeyValueIfDefined,
 } from "./util.js";
-import { getNumberOfStatesWithAnyAssessmentApprovals, states } from "./states.js";
+import {
+  getNumberOfStatesWithAnyAssessmentApprovals,
+  states,
+} from "./states.js";
 
 let assessments;
 
@@ -16,19 +18,31 @@ class Assessment {
     this.id = id;
     this.name = name;
     this.approvingStates = [];
+    this.subtests = [];
   }
 }
+
+const SUBTESTS = {
+  P: "Pho&shy;ne&shy;mic awa&shy;re&shy;ness",
+  R: "Rapid auto&shy;ma&shy;ti&shy;zed naming",
+  L: "Let&shy;ter-sound cor&shy;respon&shy;dence",
+  S: "Sin&shy;gle-&shy;word rea&shy;ding",
+  N: "Non&shy;sense-&shy;word rea&shy;ding",
+  O: "Oral pas&shy;sage rea&shy;ding flu&shy;en&shy;cy",
+  E: "Spel&shy;ling",
+  M: "Ma&shy;ze",
+};
 
 export const processAssessmentData = (raw) => {
   assessments = {};
   const assessmentBlocks = raw.split("\n\n");
   for (let block of assessmentBlocks) {
     const keyValues = block.split("\n");
-    const assessment = new Assessment('noid', 'Unknown Assessment');
+    const assessment = new Assessment("noid", "Unknown Assessment");
     let approvingStates = [];
     for (let keyValue of keyValues) {
       const [key, value] = keyValue.split("|").map((a) => a.trim());
-      if (value === 'n/a') {
+      if (value === "n/a") {
         continue;
       }
       if (key === "id") {
@@ -45,15 +59,27 @@ export const processAssessmentData = (raw) => {
         assessment.wordLevelSkills = value;
       } else if (key.toLowerCase() === "fluency and comprehension") {
         assessment.fluencyAndComprehension = value;
-      } else if (key.toLowerCase() === "national center for intensive intervention rating for fall of 1st grade") {
+      } else if (
+        key.toLowerCase() ===
+        "national center for intensive intervention rating for fall of 1st grade"
+      ) {
         assessment.ncfiirfffg = value;
       } else if (key === "available grade levels") {
         assessment.availableGradeLevels = value;
       } else if (key === "time required") {
-        if (value.includes('-')) {
-          assessment.timeRequired = value.split('-').map(v => parseInt(v.trim()));
+        if (value.includes("-")) {
+          assessment.timeRequired = value
+            .split("-")
+            .map((v) => parseInt(v.trim()));
         } else {
           assessment.timeRequired = parseInt(value);
+        }
+      } else if (key === "Coverage of recommended skill areas") {
+        assessment.subtests = value.trim().split(",").map(l => l.trim());
+        for (let s of assessment.subtests) {
+          if (!Object.keys(SUBTESTS).includes(s)) {
+            alert('Sorry, I do not know about subtest with letter "' + s + '"');
+          }
         }
       } else if (key === "states") {
         approvingStates = value.trim().split(",");
@@ -67,17 +93,36 @@ export const processAssessmentData = (raw) => {
   }
 };
 
+const formatSubtestsScale = (assessment) => {
+  return `
+    <div class="subtests-scale">
+      ${Object.keys(SUBTESTS).map(k => `
+        <div class="subtests-scale-element ${assessment.subtests.includes(k) ? 'on' : 'off'}"
+             title="${SUBTESTS[k]}"
+        >${SUBTESTS[k]}</div>
+        `).join('')}
+    </div>
+  `;
+};
+
 const formatAssessmentDetails = (id) => {
   const assessment = assessments[id];
-  let timeRequired = '';
+  let timeRequired = "";
   if (assessment.timeRequired) {
-    timeRequired = (!!assessment.timeRequired.length ?
-        assessment.timeRequired[0] + ' — ' + assessment.timeRequired[1] :
-        assessment.timeRequired) + ' minutes';
+    timeRequired =
+      (!!assessment.timeRequired.length
+        ? assessment.timeRequired[0] + " — " + assessment.timeRequired[1]
+        : assessment.timeRequired) + " minutes";
   }
   const percentOfStateApprovals = Math.round(
-    100 * assessment.approvingStates.length / getNumberOfStatesWithAnyAssessmentApprovals());
-  const percentOfStateApprovalsCalculation = '' + assessment.approvingStates.length + '/' + getNumberOfStatesWithAnyAssessmentApprovals();
+    (100 * assessment.approvingStates.length) /
+      getNumberOfStatesWithAnyAssessmentApprovals()
+  );
+  const percentOfStateApprovalsCalculation =
+    "" +
+    assessment.approvingStates.length +
+    "/" +
+    getNumberOfStatesWithAnyAssessmentApprovals();
   return `
       <h1 class="assessment">${assessment.name}</h1>
       <h2>Approval</h2>
@@ -85,16 +130,22 @@ const formatAssessmentDetails = (id) => {
       ${assessment.approvingStates.map(formatSingleStatePill).join(" ")}
       <p><b>Percent of state approvals</b>: ${percentOfStateApprovals}% (${percentOfStateApprovalsCalculation})</p>
       <h2>Publishing</h2>
-      ${showKeyValueIfDefined('Publisher', assessment.publisher)}
-      ${showKeyValueIfDefined('Parent Company', assessment.parentCompany)}
-      ${showKeyValueIfDefined('Owners', assessment.owners)}
+      ${showKeyValueIfDefined("Publisher", assessment.publisher)}
+      ${showKeyValueIfDefined("Parent Company", assessment.parentCompany)}
+      ${showKeyValueIfDefined("Owners", assessment.owners)}
       <h2>Technical information</h2>
-      ${showKeyValueIfDefined('Time Required', timeRequired)}
-      ${showKeyValueIfDefined('Available grade levels', assessment.availableGradeLevels)}
+      ${showKeyValueIfDefined("Time Required", timeRequired)}
+      ${showKeyValueIfDefined(
+        "Available grade levels",
+        assessment.availableGradeLevels
+      )}
       <h2>Subtests offered</h2>
-      ${showKeyValueIfDefined('Word-level skills', assessment.wordLevelSkills)}
-      ${showKeyValueIfDefined('National Center for Intensive Intervention Rating for Fall of 1st grade', assessment.ncfiirfffg)}
-      ${showKeyValueIfDefined('Fluency and Comprehension', assessment.fluencyAndComprehension)}
+      ${formatSubtestsScale(assessment)}
+      <p></p>
+      ${showKeyValueIfDefined(
+        "National Center for Intensive Intervention Rating for Fall of 1st grade",
+        assessment.ncfiirfffg
+      )}
       <p style="margin-top: 50px"></p>
       <p style="text-align: center">
         <big><a href="#" onclick="compareAssessments()" style="text-decoration: none">Compare Assessments</a></big>
@@ -103,21 +154,21 @@ const formatAssessmentDetails = (id) => {
 };
 
 const formatAssessmentRowInTable = (assessment) => {
-  let timeRequired = '';
+  let timeRequired = "";
   if (assessment.timeRequired) {
-    timeRequired = (!!assessment.timeRequired.length ?
-        assessment.timeRequired[0] + ' — ' + assessment.timeRequired[1] :
-        assessment.timeRequired);
+    timeRequired = !!assessment.timeRequired.length
+      ? assessment.timeRequired[0] + " — " + assessment.timeRequired[1]
+      : assessment.timeRequired;
   }
   return `
     <tr>
-      <td class="odd">${assessment.name || ''}</td>
-      <td class="even">${assessment.publisher || ''}</td>
-      <td class="odd">${assessment.parentCompany || ''}</td>
-      <td class="even">${assessment.owners || ''}</td>
+      <td class="odd">${assessment.name || ""}</td>
+      <td class="even">${assessment.publisher || ""}</td>
+      <td class="odd">${assessment.parentCompany || ""}</td>
+      <td class="even">${assessment.owners || ""}</td>
       <td class="odd">${timeRequired}</td>
-      <td class="even">${assessment.availableGradeLevels || ''}</td>
-      <td class="odd">${assessment.wordLevelSkills || ''}</td>
+      <td class="even">${assessment.availableGradeLevels || ""}</td>
+      <td class="odd">${assessment.wordLevelSkills || ""}</td>
     </tr>
   `;
 };
@@ -132,7 +183,7 @@ export const showAssessment = (id) => {
   clearDetails();
   const assessment = assessments[id];
   if (!assessment) {
-    alert("I don't know about assessment " + id)
+    alert("I don't know about assessment " + id);
   }
   highlightStates(assessment.approvingStates, states);
 
@@ -142,7 +193,7 @@ export const showAssessment = (id) => {
 export const compareAssessments = () => {
   enterTableMode();
 
-  document.getElementById('table-container').innerHTML = `
+  document.getElementById("table-container").innerHTML = `
     <div onclick="enterMapMode()" style="cursor: pointer">⬅️ Back to Map</div>
     <h1>Assessments</h1>
     <table>
@@ -155,7 +206,7 @@ export const compareAssessments = () => {
         <th>Available<br/>grade<br/>levels</th>
         <th>Word-level skills</th>
       </tr>
-    ${Object.values(assessments).map(formatAssessmentRowInTable).join('\n')}
+    ${Object.values(assessments).map(formatAssessmentRowInTable).join("\n")}
     </table>
   `;
 };

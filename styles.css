@@ -159,3 +159,26 @@ body {
 #table-container tr.even:hover {
   background-color: lightyellow !important;
 }
+
+.subtests-scale {
+  align-items: center;
+  display: flex;
+  gap: 5px;
+  align-items: stretch;
+}
+
+.subtests-scale-element {
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  display: inline-flex;
+  font-size: xx-small;
+  flex-basis: calc(100% / 8);
+  overflow: hidden;
+  padding: 2px;
+  text-overflow: ellipsis;
+}
+
+.subtests-scale-element.on {
+  background-color: #2868c5;
+  color: white;
+}
