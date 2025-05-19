@@ -141,7 +141,7 @@ const formatAssessmentDetails = (id) => {
       )}
       <h2>Subtests offered</h2>
       ${formatSubtestsScale(assessment)}
-      <p></p>
+      <p style="margin-top: 20px;"></p>
       ${showKeyValueIfDefined(
         "National Center for Intensive Intervention Rating for Fall of 1st grade",
         assessment.ncfiirfffg
