@@ -12,8 +12,7 @@ alignment to other assessments| GRADE (.33-.77); CTOPP (.19-.49)
 National Center for Intensive Intervention Rating for Fall of 1st grade| Partially Convincing
 Sound- and Symbol-level skills| Letter-Naming Fluency; Phoneme Segmentation
 Vocabulary| n/a
-Fluency and Comprehension| Oral Reading Fluency, Maze
-Coverage of recommended skill areas| P, L, N, S, O
+Coverage of recommended skill areas| P, L, N, S, O, M
 
 id|AI
 name|AimsWeb or AimsWeb +
@@ -27,7 +26,6 @@ assessment type| both CAT and Fixed Question available
 time required| 20-40
 alignment to other assessments| ISAT, STAAR, and NMSBA, MAP
 National Center for Intensive Intervention Rating for Fall of 1st grade| n/a
-Sound- and Symbol-level skills| Letter Name Fluency, Letter Word Sound Fluency, Phoneme Segmentation, Spelling
 Vocabulary| Auditory Vocabulary
 Fluency and Comprehension| Oral Reading Fluency, Listening Comprehension
 Coverage of recommended skill areas| P, L, E, S, N, O
@@ -44,7 +42,6 @@ assessment type| computer-adaptive
 time required| 15-18
 alignment to other assessments| Early Assessment of Reading Skills, STAAR
 National Center for Intensive Intervention Rating for Fall of 1st grade| Convincing Evidence
-Sound- and Symbol-level skills| Letter-Sound Fluency, Letter Name Fluency, Rapid Naming
 Vocabulary| Vocabulary
 Fluency and Comprehension| Oral Reading Fluency, reading and listening comprehension
 Coverage of recommended skill areas| R, L, P, SP, N, O
@@ -61,7 +58,6 @@ assessment type| fixed-question
 time required| 8-10
 alignment to other assessments| DIBELS Next, Iowa Assessment of Basic Skills
 National Center for Intensive Intervention Rating for Fall of 1st grade|
-Sound- and Symbol-level skills| Letter names, Letter sounds, Phoneme segmenting
 Vocabulary| Vocabulary
 Fluency and Comprehension| Passage Reading Fluency, Reading Comprehension
 Coverage of recommended skill areas:| P, L, S, O, N
@@ -78,7 +74,6 @@ assessment type| fixed-question
 time required| 25-40
 alignment to other assessments| DIBELS
 National Center for Intensive Intervention Rating for Fall of 1st grade| N/A
-Sound- and Symbol-level skills| Letter names, Phoneme Segmenting, Letter Sounds
 Vocabulary| n/a
 Fluency and Comprehension| Literary Text, Informational Text, Read to perform a task
 Coverage of recommended skill areas:| L, P, S
@@ -95,7 +90,6 @@ assessment type| both fixed-question and computer-adaptive testing available
 time required| 30-45
 alignment to other assessments| Gates-MacGinitie-4th, Iowa Test of Basic Skills, MAP, (.58-.86)
 National Center for Intensive Intervention Rating for Fall of 1st grade| Partially Convincing
-Sound- and Symbol-level skills| Concepts of Print, Phonological awereness, Phonics
 Vocabulary| vocabulary
 Fluency and Comprehension| Comprehension-Literature, Comprehension-Informational
 Coverage of recommended skill areas| P, L
