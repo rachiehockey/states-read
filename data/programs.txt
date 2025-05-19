@@ -13,6 +13,7 @@ time required 1st grade| 90
 available grade levels | K-6
 year of publication | 2022
 state approvals| 78%
+integration opportunities|
 
 
 id|WO
@@ -29,6 +30,7 @@ time required 1st grade| 60-75
 available grade levels | K-6
 year of publication | 2020
 state approvals| 89%
+integration opportunities|
 
 id|EI
 name|EL-Imagine Learning
@@ -45,6 +47,7 @@ time required 1st grade| 120-180
 available grade levels | k-8
 year of publication | 2017
 state approvals| 67%
+integration opportunities|
 
 id|AM
 name|Amplify CKLA
@@ -61,6 +64,7 @@ time required 1st grade| 90-120
 available grade levels | K-5
 year of publication | 2025
 state approvals| 78%
+integration opportunities|
 
 id|WW
 name|Wit and Wisdom
@@ -77,6 +81,7 @@ time required 1st grade| 90
 available grade levels | K-5
 year of publication | 2016
 state approvals| 56%
+integration opportunities|
 
 id|BA
 name|Benchmark Advance
@@ -109,6 +114,7 @@ time required 1st grade|
 available grade levels | K-5
 year of publication | unknown
 state approvals| 44%
+integration opportunities|
 
 id|BW
 name|Bookworms
@@ -125,6 +131,7 @@ time required 1st grade| 90
 available grade levels | K-5
 year of publication | 2022
 state approvals| 11%
+integration opportunities|33%
 
 id|OC
 name|Open Court
@@ -141,6 +148,7 @@ time required 1st grade| 60-75
 available grade levels | K-6
 year of publication | 2023
 state approvals| 56%
+integration opportunities|
 
 id|SL
 name|myView Literacy
@@ -157,6 +165,7 @@ time required 1st grade| 120-180
 available grade levels | K-5
 year of publication | 2025
 state approvals| 56%
+integration opportunities|
 
 id|AR
 name|ARC Core
@@ -173,6 +182,7 @@ time required 1st grade| 60-140
 available grade levels | K-12
 year of publication | 2017
 state approvals| 33%
+integration opportunities|
 
 id|BR
 name|Being a Reader
@@ -189,6 +199,7 @@ time required 1st grade| 35-65
 available grade levels | K-5
 year of publication | 2023
 state approvals| 33%
+integration opportunities|36%
 
 id|ZB
 name|Superkids reading Program
@@ -205,6 +216,7 @@ time required 1st grade| 110-130
 available grade levels | K-2
 year of publication | 2025
 state approvals| 33%
+integration opportunities|33%
 
 id|RM
 name|Reading Mastery Transformations
@@ -221,6 +233,7 @@ time required 1st grade| unclear
 available grade levels | K-5
 year of publication | 2021
 state approvals| 11%
+integration opportunities|
 
 id|FP
 name|Fishtank Plus ELA
@@ -237,6 +250,7 @@ time required 1st grade| 60
 available grade levels | K-10
 year of publication | 2021
 state approvals| 11%
+integration opportunities|37%
 
 id|WR
 name| writing road to reading
@@ -253,4 +267,5 @@ time required 1st grade| 90-120
 available grade levels | K-6
 year of publication | 2012
 state approvals| 11%
+integration opportunities|
 
