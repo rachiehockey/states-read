@@ -168,7 +168,7 @@ const formatAssessmentRowInTable = (assessment) => {
       <td class="even">${assessment.owners || ""}</td>
       <td class="odd">${timeRequired}</td>
       <td class="even">${assessment.availableGradeLevels || ""}</td>
-      <td class="odd">${assessment.wordLevelSkills || ""}</td>
+      <td class="odd">${formatSubtestsScale(assessment)}</td>
     </tr>
   `;
 };

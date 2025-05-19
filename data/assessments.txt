@@ -137,4 +137,4 @@ assessment type| computer-adaptive
 time required| 15-18
 alignment to other assessments| Early Assessment of Reading Skills, STAAR
 National Center for Intensive Intervention Rating for Fall of 1st grade| Convincing Evidence of Classificatio Accuracy
-Coverage of recommended skill areas| R, L, P, SP, N, O, M
+Coverage of recommended skill areas| R, L, P, E, N, O, M
