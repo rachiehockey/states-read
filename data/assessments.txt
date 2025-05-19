@@ -9,9 +9,7 @@ available grade levels| K-8
 assessment type| fixed question
 time required| 15
 alignment to other assessments| GRADE (.33-.77); CTOPP (.19-.49)
-National Center for Intensive Intervention Rating for Fall of 1st grade| Partially Convincing
-Sound- and Symbol-level skills| Letter-Naming Fluency; Phoneme Segmentation
-Vocabulary| n/a
+National Center for Intensive Intervention Rating for Fall of 1st grade| Partially Convincing Classification Accuracy
 Coverage of recommended skill areas| P, L, N, S, O, M
 
 id|AI
@@ -26,8 +24,6 @@ assessment type| both CAT and Fixed Question available
 time required| 20-40
 alignment to other assessments| ISAT, STAAR, and NMSBA, MAP
 National Center for Intensive Intervention Rating for Fall of 1st grade| n/a
-Vocabulary| Auditory Vocabulary
-Fluency and Comprehension| Oral Reading Fluency, Listening Comprehension
 Coverage of recommended skill areas| P, L, E, S, N, O
 
 id|AM
@@ -41,10 +37,10 @@ available grade levels|K-5
 assessment type| computer-adaptive
 time required| 15-18
 alignment to other assessments| Early Assessment of Reading Skills, STAAR
-National Center for Intensive Intervention Rating for Fall of 1st grade| Convincing Evidence
+National Center for Intensive Intervention Rating for Fall of 1st grade| Convincing Evidence of Classificatio Accuracy
 Vocabulary| Vocabulary
 Fluency and Comprehension| Oral Reading Fluency, reading and listening comprehension
-Coverage of recommended skill areas| R, L, P, SP, N, O
+Coverage of recommended skill areas| R, L, P, SP, N, O, M
 
 id|DI
 name|DIBELS 8th Edition/ mClass
@@ -57,10 +53,8 @@ available grade levels| K-8
 assessment type| fixed-question
 time required| 8-10
 alignment to other assessments| DIBELS Next, Iowa Assessment of Basic Skills
-National Center for Intensive Intervention Rating for Fall of 1st grade|
-Vocabulary| Vocabulary
-Fluency and Comprehension| Passage Reading Fluency, Reading Comprehension
-Coverage of recommended skill areas:| P, L, S, O, N
+National Center for Intensive Intervention Rating for Fall of 1st grade| n/a
+Coverage of recommended skill areas:| P, L, S, O, N, M
 
 id|EC
 name|easyCBM
@@ -74,9 +68,7 @@ assessment type| fixed-question
 time required| 25-40
 alignment to other assessments| DIBELS
 National Center for Intensive Intervention Rating for Fall of 1st grade| N/A
-Vocabulary| n/a
-Fluency and Comprehension| Literary Text, Informational Text, Read to perform a task
-Coverage of recommended skill areas:| L, P, S
+Coverage of recommended skill areas:| L, P, S, M
 
 id|FB
 name|FastBridge
@@ -89,10 +81,8 @@ available grade levels| K-12
 assessment type| both fixed-question and computer-adaptive testing available
 time required| 30-45
 alignment to other assessments| Gates-MacGinitie-4th, Iowa Test of Basic Skills, MAP, (.58-.86)
-National Center for Intensive Intervention Rating for Fall of 1st grade| Partially Convincing
-Vocabulary| vocabulary
-Fluency and Comprehension| Comprehension-Literature, Comprehension-Informational
-Coverage of recommended skill areas| P, L
+National Center for Intensive Intervention Rating for Fall of 1st grade| Partially Convincing Evidence of Classification Accuracy
+Coverage of recommended skill areas| P, L, M
 
 id|IR
 name|iReady
@@ -105,11 +95,8 @@ available grade levels| K-12
 assessment type| computer-adaptive
 time required| 20-40
 alignment to other assessments| SMARTER Balanced, PARCC, and other state summative assesments inlcluding PSAT
-National Center for Intensive Intervention Rating for Fall of 1st grade| Partially Convincing
-Sound- and Symbol-level skills| Phonological awareness, Phonics
-Vocabulary| Vocabulary
-Fluency and Comprehension| Comprehension-Literature, Comprehension-Informational
-Coverage of recommended skill areas| P, L, S
+National Center for Intensive Intervention Rating for Fall of 1st grade| Partially Convincing Evidence of Classification Accuracy
+Coverage of recommended skill areas| P, L, S, M
 
 id|MA
 name|MAP (NWEA)
@@ -122,12 +109,8 @@ available grade levels|K-12
 assessment type| computer-adaptive
 time required| 20-40
 alignment to other assessments| ACT Aspire, PARCC and Smarter Balanced (.78-.80)
-National Center for Intensive Intervention Rating for Fall of 1st grade| Partially Convincing
-Sound- and Symbol-level skills| Phonological awareness, print concepts
-Vocabulary| context clues and references, vocabulary acquisition and use
-Fluency and Comprehension| "Literature: Key Ideas, Craft, Structure
-Informational Text: Key Ideas, Details, Craft, Structure"
-Coverage of recommended skill areas| P, L, S
+National Center for Intensive Intervention Rating for Fall of 1st grade| Partially Convincing Evidence of Classification Accuracy
+Coverage of recommended skill areas| P, L, S, M
 
 id|ST
 name|STAR
@@ -140,8 +123,5 @@ available grade levels|k-12
 assessment type| computer adaptive
 time required| 12-15
 alignment to other assessments| Smarter Balanced (.76-.81), PARCC (.77-.85), SAT-9, multiple individual state accountability tests (.71-.74)
-National Center for Intensive Intervention Rating for Fall of 1st grade| Convincing
-Sound- and Symbol-level skills| Alphabetic Principle, Concept of Word, Visual Discrimination, Phonemic Awareness, Phonics
-Vocabulary| Vocabulary
-Fluency and Comprehension| "Sentence-Level Comprehension, Paragraph-Level Comprehension"
-Coverage of recommended skill areas| P, L, S, N
+National Center for Intensive Intervention Rating for Fall of 1st grade| Convincing Evidence of Classification Accuracy
+Coverage of recommended skill areas| P, L, S, N, M
