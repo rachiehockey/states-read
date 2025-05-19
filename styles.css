@@ -146,7 +146,6 @@ body {
 }
 #table-container td, #table-container th {
   padding: 5px;
-  max-width: 15vw;
 }
 #table-container td.odd {
   background-color: #eee;
@@ -173,6 +172,7 @@ body {
   display: inline-flex;
   font-size: xx-small;
   flex-basis: calc(100% / 8);
+  min-width: 8ex;
   overflow: hidden;
   padding: 2px;
   text-overflow: ellipsis;
