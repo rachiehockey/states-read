@@ -30,7 +30,7 @@ const SUBTESTS = {
   N: "Non&shy;sense-&shy;word rea&shy;ding",
   O: "Oral pas&shy;sage rea&shy;ding flu&shy;en&shy;cy",
   E: "Spel&shy;ling",
-  M: "Ma&shy;ze",
+  M: "Com&shy;pre&shy;hen&shy;sion",
 };
 
 export const processAssessmentData = (raw) => {
