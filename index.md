@@ -11,7 +11,6 @@ layout: default
     <div id="popup"></div>
   </div>
   <div id="details"></div>
-  <div id="footer"></div>
   <div id="table-container"></div>
 </div>
 <div id="legend">
@@ -20,3 +19,4 @@ layout: default
   <div class="pill assessment-pill">Assessment</div>
   <div class="pill program-pill">Program</div>
 </div>
+<div id="footer"></div>

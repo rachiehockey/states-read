@@ -198,13 +198,13 @@ export const compareAssessments = () => {
     <h1>Assessments</h1>
     <table>
       <tr class="header">
-        <th>Name</th>
-        <th>Publisher</th>
-        <th>Parent company</th>
-        <th>Owners</th>
-        <th>Time<br/>required<br/>(minutes)</th>
-        <th>Available<br/>grade<br/>levels</th>
-        <th>Word-level skills</th>
+        <th class="odd">Name</th>
+        <th class="even">Publisher</th>
+        <th class="odd">Parent company</th>
+        <th class="even">Owners</th>
+        <th class="odd">Time<br/>required<br/>(minutes)</th>
+        <th class="even">Available<br/>grade<br/>levels</th>
+        <th class="odd">Word-level skills</th>
       </tr>
     ${Object.values(assessments).map(formatAssessmentRowInTable).join("\n")}
     </table>

@@ -147,10 +147,12 @@ body {
 #table-container td, #table-container th {
   padding: 5px;
 }
-#table-container td.odd {
+#table-container td.odd,
+#table-container th.odd {
   background-color: #eee;
 }
-#table-container td.even {
+#table-container td.even,
+#table-container th.even {
   background-color: #ddd;
 }
 
