@@ -32,7 +32,7 @@ Sound- and Symbol-level skills| Letter Name Fluency, Letter Word Sound Fluency, 
 Word-level skills| Word Reading Fluency, Nonsense Word Reading Fluency
 Vocabulary| Auditory Vocabulary
 Fluency and Comprehension| Oral Reading Fluency, Listening Comprehension
-Coverage of recommended skill areas| P, L, SP, S, N O 
+Coverage of recommended skill areas| P, L, E, S, N, O
 
 id|AM
 name|Amira
@@ -122,7 +122,7 @@ Sound- and Symbol-level skills| Phonological awareness, Phonics
 Word-level skills| High-Frequency Words
 Vocabulary| Vocabulary
 Fluency and Comprehension| Comprehension-Literature, Comprehension-Informational
-Coverage of recommended skill areas| P, L, S, 
+Coverage of recommended skill areas| P, L, S
 
 id|MA
 name|MAP (NWEA)
@@ -159,4 +159,4 @@ Sound- and Symbol-level skills| Alphabetic Principle, Concept of Word, Visual Di
 Word-level skills| Structural Analysis
 Vocabulary| Vocabulary
 Fluency and Comprehension| "Sentence-Level Comprehension, Paragraph-Level Comprehension"
-Coverage of recommended skill areas| PA, L, S, N
+Coverage of recommended skill areas| P, L, S, N
