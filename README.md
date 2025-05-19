@@ -4,7 +4,7 @@ Data and visualization about reading programs and assessments in US states
 ## Schema
 
 * State
-  - Two-letter code
+  - Two-letter code (standardized)
   - Name
   - List of approved programs
   - List of approved assessments
