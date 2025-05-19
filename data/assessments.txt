@@ -38,8 +38,6 @@ assessment type| computer-adaptive
 time required| 15-18
 alignment to other assessments| Early Assessment of Reading Skills, STAAR
 National Center for Intensive Intervention Rating for Fall of 1st grade| Convincing Evidence of Classificatio Accuracy
-Vocabulary| Vocabulary
-Fluency and Comprehension| Oral Reading Fluency, reading and listening comprehension
 Coverage of recommended skill areas| R, L, P, SP, N, O, M
 
 id|DI
@@ -125,3 +123,17 @@ time required| 12-15
 alignment to other assessments| Smarter Balanced (.76-.81), PARCC (.77-.85), SAT-9, multiple individual state accountability tests (.71-.74)
 National Center for Intensive Intervention Rating for Fall of 1st grade| Convincing Evidence of Classification Accuracy
 Coverage of recommended skill areas| P, L, S, N, M
+
+id|IS
+name| Istation (ISIP)
+States| AL, AR, CO, ID, IA, IN, KY, MI, MS, MO, NE, OH, OK, WA, WV
+Publisher| Amira
+Parent company| Houghton Mifflin Hartcourt
+Owner| veritas capital
+advertised alongside| Amira Learning
+assessment type| computer-adaptive
+time required| 15-18
+alignment to other assessments| Early Assessment of Reading Skills, STAAR
+National Center for Intensive Intervention Rating for Fall of 1st grade| Convincing Evidence of Classificatio Accuracy
+Coverage of recommended skill areas| R, L, P, SP, N, O, M
+
