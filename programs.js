@@ -5,7 +5,7 @@ import {
   highlightStates,
   showKeyValueIfDefined
 } from "./util.js";
-import { states } from "./states.js";
+import { states, getNumberOfStatesWithAnyProgramApprovals } from "./states.js";
 
 let programs;
 
@@ -127,11 +127,23 @@ const formatProgramDetails = (id) => {
   const contentFocus = formatContentFocus(program);
   const timeRequiredFirstGrade = formatTimeRequiredFirstGrade(program);
 
+  const percentOfStateApprovals = Math.round(
+    (100 * program.approvingStates.length) /
+      getNumberOfStatesWithAnyProgramApprovals()
+  );
+  const percentOfStateApprovalsCalculation =
+    "" +
+    program.approvingStates.length +
+    "/" +
+    getNumberOfStatesWithAnyProgramApprovals();
+
+
   return `
       <h1 class="program">${program.name}</h1>
       <h2>Approval</h2>
       <p><b>Approved in ${program.approvingStates.length} states: </b>
       ${program.approvingStates.map(formatSingleStatePill).join(" ")}
+      <p><b>Percent of state approvals</b>: ${percentOfStateApprovals}% (${percentOfStateApprovalsCalculation})</p>
       </p>
       <h2>Quality Indicators</h2>
       ${showKeyValueIfDefined('Evidence-based', program.evidenceBased)}

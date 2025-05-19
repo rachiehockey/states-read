@@ -10,6 +10,7 @@ class State {
 
 let states;
 let cachedNumberOfStatesWithAnyAssessmentApprovals;
+let cachedNumberOfStatesWithAnyProgramApprovals;
 
 const stateNames = {
   AL: "Alabama",
@@ -75,12 +76,27 @@ const init = () => {
 
 const getNumberOfStatesWithAnyAssessmentApprovals = () => {
   if (!cachedNumberOfStatesWithAnyAssessmentApprovals) {
-    cachedNumberOfStatesWithAnyAssessmentApprovals =
-        Object.values(states).filter(s => s.approvedAssessments.length > 0).length;
+    cachedNumberOfStatesWithAnyAssessmentApprovals = Object.values(
+      states
+    ).filter((s) => s.approvedAssessments.length > 0).length;
   }
   return cachedNumberOfStatesWithAnyAssessmentApprovals;
 };
 
+const getNumberOfStatesWithAnyProgramApprovals = () => {
+  if (!cachedNumberOfStatesWithAnyProgramApprovals) {
+    cachedNumberOfStatesWithAnyProgramApprovals = Object.values(states).filter(
+      (s) => s.approvedPrograms.length > 0
+    ).length;
+  }
+  return cachedNumberOfStatesWithAnyProgramApprovals;
+};
+
 export {
-  init, getNumberOfStatesWithAnyAssessmentApprovals, states, stateNames, stateCodes
+  init,
+  getNumberOfStatesWithAnyAssessmentApprovals,
+  getNumberOfStatesWithAnyProgramApprovals,
+  states,
+  stateNames,
+  stateCodes,
 };
