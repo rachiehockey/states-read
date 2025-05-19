@@ -33,20 +33,30 @@ export const processProgramData = (raw) => {
       }
       if (key === "id") {
         program.id = value;
-      } else if (key === "name") {
+      } else if (key.toLowerCase() === "name") {
         program.name = value;
-      } else if (key === "company") {
+      } else if (key.toLowerCase() === "company") {
         program.company = value;
-      } else if (key === 'content focus') {
+      } else if (key.toLowerCase() === 'content focus') {
         program.contentFocusLowHigh = parseContentFocus(value);
-      } else if (key === 'time required 1st grade') {
+      } else if (key.toLowerCase() === 'time required 1st grade') {
         program.timeRequiredFirstGradeMinutes = parseInt(value);
-      } else if (key === 'year of last update') {
+      } else if (key.toLowerCase() === 'year of last update') {
         program.yearOfLastUpdate = value;
-      } else if (key === "aligned") {
+      } else if (key.toLowerCase() === "aligned") {
         program.aligned = value;
-      } else if (key === "feasible") {
+      } else if (key.toLowerCase() === "feasible") {
         program.feasible = value;
+      } else if (key.toLowerCase() === 'year of publication') {
+        program.yearOfPublication = value;
+      } else if (key.toLowerCase() === 'evidence-based') {
+        program.evidenceBased = value;
+      } else if (key.toLowerCase() === 'owners') {
+        program.owners = value;
+      } else if(key.toLowerCase() === 'advertised alongside') {
+        program.advertisedAlongside = value;
+      } else if (key.toLowerCase() === 'cultural responsiveness') {
+        program.culturalResponsiveness = value;
       } else if (key === "states") {
         const approvingStates = value.trim().split(",");
         for (let stateCode of approvingStates) {
@@ -119,15 +129,23 @@ const formatProgramDetails = (id) => {
 
   return `
       <h1 class="program">${program.name}</h1>
+      <h2>Approval</h2>
       <p><b>Approved in ${program.approvingStates.length} states: </b>
       ${program.approvingStates.map(formatSingleStatePill).join(" ")}
       </p>
-      ${showKeyValueIfDefined('Company', program.company)}
-      ${showKeyValueIfDefined('Aligned', aligned)}
-      ${showKeyValueIfDefined('Feasible', feasible)}
+      <h2>Quality Indicators</h2>
+      ${showKeyValueIfDefined('Evidence-based', program.evidenceBased)}
+      ${showKeyValueIfDefined('Cultural responsiveness', program.culturalResponsiveness)}
+      ${showKeyValueIfDefined('Alignment', aligned)}
+      ${showKeyValueIfDefined('Feasibility', feasible)}
       ${showKeyValueIfDefined('Content Focus', contentFocus)}
-      ${showKeyValueIfDefined('Time Required 1<sup>st</sup> grade', timeRequiredFirstGrade)}
-      ${showKeyValueIfDefined('Years of last update', program.yearOfLastUpdate)}
+      <h2>Publication Information</h2>
+      ${showKeyValueIfDefined('Est. time Required 1<sup>st</sup> grade', timeRequiredFirstGrade)}
+      ${showKeyValueIfDefined('Company', program.company)}
+      ${showKeyValueIfDefined('Owners', program.owners)}
+      ${showKeyValueIfDefined('Advertised alongside', program.advertisedAlongside)}
+      ${showKeyValueIfDefined('Year of publication', program.yearOfPublication)}
+      ${showKeyValueIfDefined('Year of last update', program.yearOfLastUpdate)}
     `;
 };
 
