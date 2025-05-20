@@ -14,6 +14,7 @@ available grade levels | K-6
 year of publication | 2022
 integration opportunities|
 topic coverage|
+quality indicators|-R, A, F, C
 
 
 id|WO
@@ -31,6 +32,7 @@ available grade levels | K-6
 year of publication | 2020
 integration opportunities|
 topic coverage|
+quality indicators|-E, -R, A, F
 
 
 id|EI
@@ -49,6 +51,7 @@ available grade levels | k-8
 year of publication | 2017
 integration opportunities|
 topic coverage|
+quality indicators| A,F,C
 
 
 id|AM
@@ -67,6 +70,7 @@ available grade levels | K-5
 year of publication | 2025
 integration opportunities|
 topic coverage|
+quality indicators|E, A, F, C
 
 
 id|WW
@@ -85,6 +89,7 @@ available grade levels | K-5
 year of publication | 2016
 integration opportunities|
 topic coverage|
+quality indicators|-R, A, F, C
 
 
 id|BA
@@ -102,6 +107,7 @@ time required 1st grade| 90
 available grade levels | K-5
 year of publication | 2020
 topic coverage|
+quality indicators|A,F
 
 
 id|BE
@@ -120,6 +126,7 @@ available grade levels | K-5
 year of publication | unknown
 integration opportunities|
 topic coverage|
+quality indicators|
 
 
 id|BW
@@ -138,6 +145,7 @@ available grade levels | K-5
 year of publication | 2022
 integration opportunities|33%
 topic coverage|W, V, C
+quality indicators|E, A
 
 
 id|OC
@@ -156,6 +164,7 @@ available grade levels | K-6
 year of publication | 2023
 integration opportunities|
 topic coverage|
+quality indicators|-E, A, F, C
 
 
 id|SL
@@ -174,6 +183,7 @@ available grade levels | K-5
 year of publication | 2025
 integration opportunities|
 topic coverage|
+quality indicators|-R, A, F
 
 
 id|AR
@@ -192,6 +202,7 @@ available grade levels | K-12
 year of publication | 2017
 integration opportunities|
 topic coverage|
+quality indicators| E, A, F
 
 
 id|BR
@@ -210,6 +221,7 @@ available grade levels | K-5
 year of publication | 2023
 integration opportunities|36%
 topic coverage|W, V, C
+quality indicators|
 
 
 id|ZB
@@ -228,6 +240,7 @@ available grade levels | K-2
 year of publication | 2025
 integration opportunities|33%
 topic coverage|
+quality indicators|
 
 
 id|RM
@@ -246,6 +259,7 @@ available grade levels | K-5
 year of publication | 2021
 integration opportunities|
 topic coverage| W, R, C
+quality indicators|
 
 
 id|FP
@@ -264,6 +278,7 @@ available grade levels | K-10
 year of publication | 2021
 integration opportunities|37%
 topic coverage|R, V, F, C
+quality indicators|
 
 
 id|WR
@@ -282,3 +297,4 @@ available grade levels | K-6
 year of publication | 2012
 integration opportunities|
 topic coverage|
+quality indicators|
