@@ -3,6 +3,7 @@ import {
   clearDetails,
   enterTableMode,
   formatSingleStatePill,
+  getSortFunction,
   highlightStates,
   showKeyValueIfDefined,
 } from "./util.js";
@@ -23,6 +24,7 @@ const SUBTESTS = {
 };
 
 let assessments;
+let currentSortFunction = getSortFunction('name');
 
 class Assessment {
   constructor(id, name) {
@@ -210,18 +212,24 @@ export const compareAssessments = () => {
     <h1>Assessments</h1>
     <table>
       <tr class="header">
-        <th class="odd">Name</th>
-        <th class="even">Publisher</th>
-        <th class="odd">Parent company</th>
-        <th class="even">Owners</th>
-        <th class="odd">Time<br/>required<br/>(minutes)</th>
-        <th class="even">Available<br/>grade<br/>levels</th>
-        <th class="odd">Word-level skills</th>
+        <th class="odd" onclick="sortAssessmentsOn('name')">Name</th>
+        <th class="even" onclick="sortAssessmentsOn('publisher')">Publisher</th>
+        <th class="odd" onclick="sortAssessmentsOn('parentCompany')">Parent company</th>
+        <th class="even" onclick="sortAssessmentsOn('owners')">Owners</th>
+        <th class="odd" onclick="sortAssessmentsOn('timeRequired')">Time<br/>required<br/>(minutes)</th>
+        <th class="even" onclick="sortAssessmentsOn('availableGradeLevels')">Available<br/>grade<br/>levels</th>
+        <th class="odd" onclick="sortAssessmentsOn('subtests')">Word-level skills</th>
       </tr>
-    ${Object.values(assessments).map(formatAssessmentRowInTable).join("\n")}
+    ${Object.values(assessments).sort(currentSortFunction).map(formatAssessmentRowInTable).join("\n")}
     </table>
   `;
 };
 
+const sortAssessmentsOn = (key) => {
+  currentSortFunction = getSortFunction(key);
+  compareAssessments();
+};
+
 window.showAssessment = showAssessment;
 window.compareAssessments = compareAssessments;
+window.sortAssessmentsOn = sortAssessmentsOn;
