@@ -11,6 +11,17 @@ import {
   states,
 } from "./states.js";
 
+const SUBTESTS = {
+  P: "Pho&shy;ne&shy;mic awa&shy;re&shy;ness",
+  R: "Rapid auto&shy;ma&shy;ti&shy;zed naming",
+  L: "Let&shy;ter-sound cor&shy;respon&shy;dence",
+  S: "Sin&shy;gle-&shy;word rea&shy;ding",
+  N: "Non&shy;sense-&shy;word rea&shy;ding",
+  O: "Oral pas&shy;sage rea&shy;ding flu&shy;en&shy;cy",
+  E: "Spel&shy;ling",
+  M: "Com&shy;pre&shy;hen&shy;sion",
+};
+
 let assessments;
 
 class Assessment {
@@ -22,16 +33,6 @@ class Assessment {
   }
 }
 
-const SUBTESTS = {
-  P: "Pho&shy;ne&shy;mic awa&shy;re&shy;ness",
-  R: "Rapid auto&shy;ma&shy;ti&shy;zed naming",
-  L: "Let&shy;ter-sound cor&shy;respon&shy;dence",
-  S: "Sin&shy;gle-&shy;word rea&shy;ding",
-  N: "Non&shy;sense-&shy;word rea&shy;ding",
-  O: "Oral pas&shy;sage rea&shy;ding flu&shy;en&shy;cy",
-  E: "Spel&shy;ling",
-  M: "Com&shy;pre&shy;hen&shy;sion",
-};
 
 export const processAssessmentData = (raw) => {
   assessments = {};
