@@ -1,6 +1,7 @@
 import {
   setDetails,
   clearDetails,
+  enterTableMode,
   formatSingleStatePill,
   highlightStates,
   showKeyValueIfDefined,
@@ -153,7 +154,6 @@ const formatTopicsScale = (program) => {
   `;
 };
 
-
 const formatProgramDetails = (id) => {
   const program = programs[id];
   const aligned = getValueForAligned(program.aligned);
@@ -203,7 +203,32 @@ const formatProgramDetails = (id) => {
       <h2>Topic Coverage</h2>
       ${formatTopicsScale(program)}
       <p style="margin-top: 20px;"></p>
+      <p style="margin-top: 50px"></p>
+      <p style="text-align: center">
+        <big><a href="#" onclick="comparePrograms()" style="text-decoration: none">Compare Programs</a></big>
+      </p>
     `;
+};
+
+
+const formatProgramRowInTable = (program) => {
+  let timeRequired = "";
+  if (program.timeRequiredFirstGradeMinutes) {
+    timeRequired = !!program.timeRequiredFirstGradeMinutes.length
+      ? program.timeRequiredFirstGradeMinutes[0] + " — " + program.timeRequiredFirstGradeMinutes[1]
+      : program.timeRequiredFirstGradeMinutes;
+  }
+  return `
+    <tr>
+      <td class="odd">${program.name || ""}</td>
+      <td class="even">${program.company || ""}</td>
+      <td class="odd">${program.advertisedAlongside || ""}</td>
+      <td class="even">${program.owners || ""}</td>
+      <td class="odd">${timeRequired}</td>
+      <td class="even">${program.yearOfPublication || ""}</td>
+      <td class="odd">${formatTopicsScale(program)}</td>
+    </tr>
+  `;
 };
 
 export const formatSingleProgramPill = (id) => {
@@ -211,6 +236,28 @@ export const formatSingleProgramPill = (id) => {
       <div class="pill program-pill" onclick="showProgram('${id}')">${id}</div>
     `;
 };
+
+export const comparePrograms = () => {
+  enterTableMode();
+
+  document.getElementById("table-container").innerHTML = `
+    <div onclick="enterMapMode()" style="cursor: pointer">⬅️ Back to Map</div>
+    <h1>Programs</h1>
+    <table>
+      <tr class="header">
+        <th class="odd">Name</th>
+        <th class="even">Company</th>
+        <th class="odd">Advertised alongside</th>
+        <th class="even">Owners</th>
+        <th class="odd">Time<br/>required<br/>(minutes)</th>
+        <th class="even">Year of<br/>publication</th>
+        <th class="odd">Topics</th>
+      </tr>
+    ${Object.values(programs).map(formatProgramRowInTable).join("\n")}
+    </table>
+  `;
+};
+
 
 const showProgram = (id) => {
   clearDetails();
@@ -221,3 +268,4 @@ const showProgram = (id) => {
 };
 
 window.showProgram = showProgram;
+window.comparePrograms = comparePrograms;
