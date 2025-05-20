@@ -65,6 +65,8 @@ export const processProgramData = (raw) => {
         program.yearOfLastUpdate = value;
       } else if (key.toLowerCase() === "year of publication") {
         program.yearOfPublication = value;
+      } else if (key.toLowerCase() === "available grade levels") {
+        program.availableGradeLevels = value;
       } else if (key.toLowerCase() === "owners") {
         program.owners = value;
       } else if (key.toLowerCase() === "advertised alongside") {
@@ -194,6 +196,7 @@ const formatProgramDetails = (id) => {
       )}
       ${showKeyValueIfDefined("Company", program.company)}
       ${showKeyValueIfDefined("Owners", program.owners)}
+      ${showKeyValueIfDefined("Available Grade Levels", program.availableGradeLevels)}
       ${showKeyValueIfDefined(
         "Advertised alongside",
         program.advertisedAlongside

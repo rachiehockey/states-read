@@ -56,6 +56,10 @@ export const processAssessmentData = (raw) => {
         assessment.owners = value;
       } else if (key === "publisher") {
         assessment.publisher = value;
+      } else if (key.toLowerCase() === 'alignment to other assessments') {
+        assessment.alignmentToOtherAssessments = value;
+      } else if (key.toLowerCase() === 'advertised alongside') {
+        assessment.advertisedAlongside = value;
       } else if (key.toLowerCase() === "word-level skills") {
         assessment.wordLevelSkills = value;
       } else if (key.toLowerCase() === "fluency and comprehension") {
@@ -143,6 +147,8 @@ const formatAssessmentDetails = (id) => {
         "Available grade levels",
         assessment.availableGradeLevels
       )}
+      ${showKeyValueIfDefined("Advertised alongside", assessment.advertisedAlongside)}
+      ${showKeyValueIfDefined("Alignment to other assessment", assessment.alignmentToOtherAssessments)}
       <h2>Subtests offered</h2>
       ${formatSubtestsScale(assessment)}
       <p style="margin-top: 20px;"></p>
