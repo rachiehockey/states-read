@@ -202,3 +202,20 @@ body {
 .topics-scale-element.on {
   background-color: #bb2323;
 }
+
+#faqs, #glossary {
+  background-color: #eee;
+  margin: 3ex auto;
+  max-width: 1000px;
+}
+
+#faqs h2, #glossary h2 {
+  text-align: center;
+}
+
+#faqs .qa,
+#glossary .definition {
+  background-color: #fff;
+  margin: 3ex;
+  padding: 3ex;
+}

@@ -135,6 +135,10 @@ const elementIsInMap = (el) => {
 
 const onMapLoad = async () => {
   const mapEl = document.getElementById("map");
+  if (!mapEl) {
+    // We are probably on a static page
+    return;
+  }
   const response = await fetch("states.svg");
   const svgData = await response.text();
 
