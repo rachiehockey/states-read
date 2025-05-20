@@ -32,8 +32,8 @@ layout: default
             <li>(i) demonstrates a statistically significant effect on improving student outcomes or other relevant outcomes based on:
                 <ul>
                     <li>(I) strong evidence from at least 1 well designed and well implemented experimental study;</li>
-                    <li>(II) moderate evidence from at least 1 well designed and wellimplemented quasi-experimental study;</li>
-                    <li>(III) promising evidence from at least 1 well designed and wellimplemented correlational study with statistical controls for selection bias</li>
+                    <li>(II) moderate evidence from at least 1 well designed and well implemented quasi-experimental study;</li>
+                    <li>(III) promising evidence from at least 1 well designed and well implemented correlational study with statistical controls for selection bias</li>
                 </ul>
             </li>
 
@@ -96,7 +96,7 @@ layout: default
     <div class="definition">
         <h3><a name="ao">Alignment to other assessments</a></h3>
 
-        <p>One key question when considering quality is not if the tool is “good” but what is it “good” at measuring?  Assessments will often indicate validity by explaining how their scores align with or predict scores on other known assessments.  Knowing what a test has been optimized to measure or predict should help you decide whether its scores are even of interest, regardless of whether they are relatively trustworthy. This is why “alignment to other assessments” is reported on this page whenever possible.</p>
+        <p>One key question when considering quality is not <i>if</i> the tool is “good” but <i>what is it “good” at measuring</i>?  Assessments will often indicate validity by explaining how their scores align with or predict scores on other known assessments.  Knowing what a test has been optimized to measure or predict should help you decide whether its scores are even of interest, regardless of whether they are relatively trustworthy. This is why “alignment to other assessments” is reported on this page whenever possible.</p>
     </div>
 
 </div>
