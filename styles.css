@@ -167,7 +167,8 @@ body {
 }
 
 .subtests-scale,
-.topics-scale {
+.topics-scale,
+.qualityindicator-scale {
   align-items: center;
   display: flex;
   gap: 5px;
@@ -175,7 +176,8 @@ body {
 }
 
 .subtests-scale-element,
-.topics-scale-element {
+.topics-scale-element,
+.qualityindicator-scale-element {
   align-items: center;
   border: 1px solid rgba(0, 0, 0, 0.5);
   display: inline-flex;
@@ -194,8 +196,11 @@ body {
   flex-basis: calc(100% / 8);
 }
 
-.subtests-scale-element.on,
-.topics-scale-element.on {
+.qualityindicator-scale-element {
+  flex-basis: calc(100% / 5);
+}
+
+.subtests-scale-element.on {
   background-color: #2868c5;
   color: white;
 }
@@ -204,8 +209,15 @@ body {
   background-color: #2868c5;
 }
 
-.topics-scale-element.on {
+.topics-scale-element.on,
+.qualityindicator-scale-element.on {
   background-color: #bb2323;
+  color: white;
+}
+
+.qualityindicator-scale-element.neg {
+  background-color: #4f0808;
+  color: white;
 }
 
 #faqs, #glossary {

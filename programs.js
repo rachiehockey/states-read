@@ -19,6 +19,8 @@ class Program {
     this.aligned = null;
     this.feasible = null;
     this.topics = [];
+    this.qualityIndicators = [];
+    this.negativeQualityIndicators = [];
   }
 }
 
@@ -30,6 +32,14 @@ const TOPICS = {
   V: "Vocabulary",
   F: "Fluency",
   C: "Reading Comprehension",
+};
+
+const QUALITY_INDICATORS = {
+  E: 'Evidence',
+  R: 'Cultural responsiveness',
+  A: 'Alignment to standards',
+  F: 'Feasibility',
+  C: 'Content focus',
 };
 
 export const processProgramData = (raw) => {
@@ -69,6 +79,24 @@ export const processProgramData = (raw) => {
         program.advertisedAlongside = value;
       } else if (key.toLowerCase() === "cultural responsiveness") {
         program.culturalResponsiveness = value;
+      } else if (key.toLowerCase() === "quality indicators") {
+        if (value.trim() === '') {
+          continue;
+        }
+        const indicators = value.trim().split(",").map(l => l.trim());
+        for (const t of indicators) {
+          let indicator;
+          if (t.startsWith('-')) {
+            indicator = t.substring(1);
+            program.negativeQualityIndicators.push(t.substring(1));
+          } else {
+            indicator = t;
+            program.qualityIndicators.push(t);
+          }
+          if (!Object.keys(QUALITY_INDICATORS).includes(indicator)) {
+            alert('Sorry, I do not know about indicator with letter "' + t + '"');
+          }
+        }
       } else if (key.toLowerCase() === "topic coverage") {
         if (value.trim() === '') {
           continue;
@@ -142,6 +170,21 @@ const formatTimeRequiredFirstGrade = (program) => {
   return program.timeRequiredFirstGradeMinutes + " minutes";
 };
 
+const formatQualityIndicatorScale = (program) => {
+  return `
+    <div class="qualityindicator-scale">
+      ${Object.keys(QUALITY_INDICATORS).map(k => `
+        <div class="qualityindicator-scale-element ${
+          program.qualityIndicators.includes(k) ? 'on' :
+          program.negativeQualityIndicators.includes(k) ? 'neg' : 'off'
+        }"
+             title="${QUALITY_INDICATORS[k]}"
+        >${QUALITY_INDICATORS[k]}</div>
+        `).join('')}
+    </div>
+  `;
+};
+
 const formatTopicsScale = (program) => {
   return `
     <div class="topics-scale">
@@ -153,6 +196,7 @@ const formatTopicsScale = (program) => {
     </div>
   `;
 };
+
 
 const formatProgramDetails = (id) => {
   const program = programs[id];
@@ -203,6 +247,8 @@ const formatProgramDetails = (id) => {
       <h2>Topic Coverage</h2>
       ${formatTopicsScale(program)}
       <p style="margin-top: 20px;"></p>
+      <h2>Quality Indicators</h2>
+      ${formatQualityIndicatorScale(program)}
       <p style="margin-top: 50px"></p>
       <p style="text-align: center">
         <big><a href="#" onclick="comparePrograms()" style="text-decoration: none">Compare Programs</a></big>
