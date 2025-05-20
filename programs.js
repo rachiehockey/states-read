@@ -235,7 +235,9 @@ const formatProgramRowInTable = (program) => {
 
 export const formatSingleProgramPill = (id) => {
   return `
-      <div class="pill program-pill" onclick="showProgram('${id}')">${id}</div>
+      <div class="pill program-pill"
+          title="${programs[id].name}"
+          onclick="showProgram('${id}')">${programs[id].name}</div>
     `;
 };
 

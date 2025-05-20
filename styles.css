@@ -109,8 +109,13 @@ a {
   border-radius: 4px;
   cursor: pointer;
   display: inline-block;
+  height: 3.5ex;
   margin: 1px;
+  max-width: 16ex;
+  overflow: hidden;
   padding: 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .assessment-pill {
   background-color: #eee;

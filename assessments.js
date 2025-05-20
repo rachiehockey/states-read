@@ -179,7 +179,9 @@ const formatAssessmentRowInTable = (assessment) => {
 
 export const formatSingleAssessmentPill = (id) => {
   return `
-      <div class="pill assessment-pill" onclick="showAssessment('${id}')">${id}</div>
+      <div class="pill assessment-pill"
+          title="${assessments[id].name}"
+          onclick="showAssessment('${id}')">${assessments[id].name}</div>
     `;
 };
 

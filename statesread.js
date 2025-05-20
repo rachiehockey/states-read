@@ -5,11 +5,11 @@ import {
 } from "./assessments.js";
 import { formatSingleProgramPill, processProgramData } from "./programs.js";
 import { init as statesInit, states } from "./states.js";
-import { clearStateHover, clearStateSelected, HOVER_CLASS, SELECTED_CLASS } from "./util.js";
+import { clearStateHover, clearStateSelected, SELECTED_CLASS } from "./util.js";
 
 const POPUP_ANCHOR_OFFSET = 1;
-const POPUP_WIDTH = 400;
-const POPUP_HEIGHT = 400;
+const POPUP_WIDTH = 450;
+const POPUP_HEIGHT = 450;
 const POPUP_WINDOW_SAFETY_PADDING = 20;
 
 const init = () => {
