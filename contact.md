@@ -2,4 +2,4 @@
 layout: default
 ---
 
-Coming soon!
+<a href="mailto:rachael.gabriel@uconn.edu"><tt>rachael.gabriel@uconn.edu</tt></a>

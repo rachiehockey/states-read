@@ -59,26 +59,16 @@ export const processProgramData = (raw) => {
         program.name = value;
       } else if (key.toLowerCase() === "company") {
         program.company = value;
-      } else if (key.toLowerCase() === "content focus") {
-        program.contentFocusLowHigh = parseContentFocus(value);
       } else if (key.toLowerCase() === "time required 1st grade") {
         program.timeRequiredFirstGradeMinutes = parseInt(value);
       } else if (key.toLowerCase() === "year of last update") {
         program.yearOfLastUpdate = value;
-      } else if (key.toLowerCase() === "aligned") {
-        program.aligned = value;
-      } else if (key.toLowerCase() === "feasible") {
-        program.feasible = value;
       } else if (key.toLowerCase() === "year of publication") {
         program.yearOfPublication = value;
-      } else if (key.toLowerCase() === "evidence-based") {
-        program.evidenceBased = value;
       } else if (key.toLowerCase() === "owners") {
         program.owners = value;
       } else if (key.toLowerCase() === "advertised alongside") {
         program.advertisedAlongside = value;
-      } else if (key.toLowerCase() === "cultural responsiveness") {
-        program.culturalResponsiveness = value;
       } else if (key.toLowerCase() === "quality indicators") {
         if (value.trim() === '') {
           continue;
@@ -124,28 +114,6 @@ export const processProgramData = (raw) => {
       }
     }
     programs[program.id] = program;
-  }
-};
-
-const getValueForFeasible = (id) => {
-  switch (id) {
-    case "me":
-      return "Meets EdReports expectations";
-    default:
-      return "";
-  }
-};
-
-const getValueForAligned = (id) => {
-  switch (id) {
-    case "me":
-    case "meets":
-      return "Meets EdReports expectations";
-    case "pa":
-    case "partially":
-      return "Partially Meets EdReports expectations";
-    default:
-      return "";
   }
 };
 
@@ -200,9 +168,6 @@ const formatTopicsScale = (program) => {
 
 const formatProgramDetails = (id) => {
   const program = programs[id];
-  const aligned = getValueForAligned(program.aligned);
-  const feasible = getValueForFeasible(program.feasible);
-  const contentFocus = formatContentFocus(program);
   const timeRequiredFirstGrade = formatTimeRequiredFirstGrade(program);
 
   const percentOfStateApprovals = Math.round(
@@ -222,15 +187,6 @@ const formatProgramDetails = (id) => {
       ${program.approvingStates.map(formatSingleStatePill).join(" ")}
       <p><b>Percent of state approvals</b>: ${percentOfStateApprovals}% (${percentOfStateApprovalsCalculation})</p>
       </p>
-      <h2>Quality Indicators</h2>
-      ${showKeyValueIfDefined("Evidence-based", program.evidenceBased)}
-      ${showKeyValueIfDefined(
-        "Cultural responsiveness",
-        program.culturalResponsiveness
-      )}
-      ${showKeyValueIfDefined("Alignment", aligned)}
-      ${showKeyValueIfDefined("Feasibility", feasible)}
-      ${showKeyValueIfDefined("Content Focus", contentFocus)}
       <h2>Publication Information</h2>
       ${showKeyValueIfDefined(
         "Est. time Required 1<sup>st</sup> grade",
@@ -244,12 +200,11 @@ const formatProgramDetails = (id) => {
       )}
       ${showKeyValueIfDefined("Year of publication", program.yearOfPublication)}
       ${showKeyValueIfDefined("Year of last update", program.yearOfLastUpdate)}
+      <h2>Quality Indicators</h2>
+      ${formatQualityIndicatorScale(program)}
       <h2>Topic Coverage</h2>
       ${formatTopicsScale(program)}
       <p style="margin-top: 20px;"></p>
-      <h2>Quality Indicators</h2>
-      ${formatQualityIndicatorScale(program)}
-      <p style="margin-top: 50px"></p>
       <p style="text-align: center">
         <big><a href="#" onclick="comparePrograms()" style="text-decoration: none">Compare Programs</a></big>
       </p>
