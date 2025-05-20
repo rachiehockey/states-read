@@ -13,18 +13,18 @@ body {
   display: flex;
   flex-direction: row;
   flex-grow: 1;
-  gap: 3ex;
 }
-#map-container, #details, #faqs, #glossary {
+#map-container, #details, #legend, #faqs, #glossary, #table-container {
   background-color: #eee;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 10px;
+  margin: 1ex;
+  padding: 1ex;
 }
 #map-container {
   display: flex;
   flex-direction: column;
   flex-basis: 75%;
-  padding: 1ex;
   text-align: center;
   width: 100%;
 }
@@ -186,6 +186,12 @@ body {
   overflow: hidden;
   padding: 2px;
   text-overflow: ellipsis;
+}
+
+#legend .subtests-scale-element,
+#legend .topics-scale-element,
+#legend .qualityindicator-scale-element {
+  font-size: medium;
 }
 
 .topics-scale-element {

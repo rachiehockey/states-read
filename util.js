@@ -4,7 +4,6 @@ export const SELECTED_CLASS = "selected";
 
 export const enterTableMode = () => {
   document.getElementById('map-container').style.display = 'none';
-  document.getElementById('legend').style.display = 'none';
   document.getElementById('details').style.display = 'none';
   document.getElementById('popup').style.display = 'none';
 
@@ -14,7 +13,6 @@ export const enterTableMode = () => {
 export const enterMapMode = () => {
   document.getElementById('map-container').style.display = 'flex';
   document.getElementById('details').style.display = 'block';
-  document.getElementById('legend').style.display = 'block';
 
   document.getElementById('table-container').style.display = 'none';
 };

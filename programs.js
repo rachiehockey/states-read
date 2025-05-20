@@ -273,6 +273,7 @@ const formatProgramRowInTable = (program) => {
       <td class="odd">${timeRequired}</td>
       <td class="even">${program.yearOfPublication || ""}</td>
       <td class="odd">${formatTopicsScale(program)}</td>
+      <td class="even">${formatQualityIndicatorScale(program)}</td>
     </tr>
   `;
 };
@@ -298,6 +299,7 @@ export const comparePrograms = () => {
         <th class="odd">Time<br/>required<br/>(minutes)</th>
         <th class="even">Year of<br/>publication</th>
         <th class="odd">Topics</th>
+        <th class="even">Quality indicator</th>
       </tr>
     ${Object.values(programs).map(formatProgramRowInTable).join("\n")}
     </table>
