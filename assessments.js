@@ -74,7 +74,10 @@ export const processAssessmentData = (raw) => {
         } else {
           assessment.timeRequired = parseInt(value);
         }
-      } else if (key === "Coverage of recommended skill areas") {
+      } else if (key.toLowerCase() === "coverage of recommended skill areas") {
+        if (value.trim() === '') {
+          continue;
+        }
         assessment.subtests = value.trim().split(",").map(l => l.trim());
         for (let s of assessment.subtests) {
           if (!Object.keys(SUBTESTS).includes(s)) {

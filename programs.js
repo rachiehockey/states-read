@@ -3,7 +3,7 @@ import {
   clearDetails,
   formatSingleStatePill,
   highlightStates,
-  showKeyValueIfDefined
+  showKeyValueIfDefined,
 } from "./util.js";
 import { states, getNumberOfStatesWithAnyProgramApprovals } from "./states.js";
 
@@ -17,8 +17,19 @@ class Program {
     this.company = null;
     this.aligned = null;
     this.feasible = null;
+    this.topics = [];
   }
 }
+
+const TOPICS = {
+  P: "Phonemic awareness",
+  W: "Word Work",
+  G: "Grammar",
+  R: "Writing",
+  V: "Vocabulary",
+  F: "Fluency",
+  C: "Reading Comprehension",
+};
 
 export const processProgramData = (raw) => {
   programs = {};
@@ -28,7 +39,7 @@ export const processProgramData = (raw) => {
     const program = new Program("noid", "Unknown Program");
     for (let keyValue of keyValues) {
       let [key, value] = keyValue.split("|").map((a) => a.trim());
-      if (value === 'n/a') {
+      if (value === "n/a") {
         continue;
       }
       if (key === "id") {
@@ -37,26 +48,36 @@ export const processProgramData = (raw) => {
         program.name = value;
       } else if (key.toLowerCase() === "company") {
         program.company = value;
-      } else if (key.toLowerCase() === 'content focus') {
+      } else if (key.toLowerCase() === "content focus") {
         program.contentFocusLowHigh = parseContentFocus(value);
-      } else if (key.toLowerCase() === 'time required 1st grade') {
+      } else if (key.toLowerCase() === "time required 1st grade") {
         program.timeRequiredFirstGradeMinutes = parseInt(value);
-      } else if (key.toLowerCase() === 'year of last update') {
+      } else if (key.toLowerCase() === "year of last update") {
         program.yearOfLastUpdate = value;
       } else if (key.toLowerCase() === "aligned") {
         program.aligned = value;
       } else if (key.toLowerCase() === "feasible") {
         program.feasible = value;
-      } else if (key.toLowerCase() === 'year of publication') {
+      } else if (key.toLowerCase() === "year of publication") {
         program.yearOfPublication = value;
-      } else if (key.toLowerCase() === 'evidence-based') {
+      } else if (key.toLowerCase() === "evidence-based") {
         program.evidenceBased = value;
-      } else if (key.toLowerCase() === 'owners') {
+      } else if (key.toLowerCase() === "owners") {
         program.owners = value;
-      } else if(key.toLowerCase() === 'advertised alongside') {
+      } else if (key.toLowerCase() === "advertised alongside") {
         program.advertisedAlongside = value;
-      } else if (key.toLowerCase() === 'cultural responsiveness') {
+      } else if (key.toLowerCase() === "cultural responsiveness") {
         program.culturalResponsiveness = value;
+      } else if (key.toLowerCase() === "topic coverage") {
+        if (value.trim() === '') {
+          continue;
+        }
+        program.topics = value.trim().split(",").map(l => l.trim());
+        for (let s of program.topics) {
+          if (!Object.keys(TOPICS).includes(s)) {
+            alert('Sorry, I do not know about topic with letter "' + s + '"');
+          }
+        }
       } else if (key === "states") {
         const approvingStates = value.trim().split(",");
         for (let stateCode of approvingStates) {
@@ -100,25 +121,38 @@ const getValueForAligned = (id) => {
 };
 
 const parseContentFocus = (s) => {
-  if (s.includes('not rated')) {
-    return '';
+  if (s.includes("not rated")) {
+    return "";
   }
-  return s.split('-').map(a => a.trim());
+  return s.split("-").map((a) => a.trim());
 };
 
 const formatContentFocus = (p) => {
   if (!p.contentFocusLowHigh) {
-    return '';
+    return "";
   }
-  return p.contentFocusLowHigh[0] + ' — ' + p.contentFocusLowHigh[1] + '%';
+  return p.contentFocusLowHigh[0] + " — " + p.contentFocusLowHigh[1] + "%";
 };
 
 const formatTimeRequiredFirstGrade = (program) => {
   if (!program.timeRequiredFirstGradeMinutes) {
-    return '';
+    return "";
   }
-  return program.timeRequiredFirstGradeMinutes + ' minutes';
+  return program.timeRequiredFirstGradeMinutes + " minutes";
 };
+
+const formatTopicsScale = (program) => {
+  return `
+    <div class="topics-scale">
+      ${Object.keys(TOPICS).map(k => `
+        <div class="topics-scale-element ${program.topics.includes(k) ? 'on' : 'off'}"
+             title="${TOPICS[k]}"
+        >${TOPICS[k]}</div>
+        `).join('')}
+    </div>
+  `;
+};
+
 
 const formatProgramDetails = (id) => {
   const program = programs[id];
@@ -137,7 +171,6 @@ const formatProgramDetails = (id) => {
     "/" +
     getNumberOfStatesWithAnyProgramApprovals();
 
-
   return `
       <h1 class="program">${program.name}</h1>
       <h2>Approval</h2>
@@ -146,18 +179,30 @@ const formatProgramDetails = (id) => {
       <p><b>Percent of state approvals</b>: ${percentOfStateApprovals}% (${percentOfStateApprovalsCalculation})</p>
       </p>
       <h2>Quality Indicators</h2>
-      ${showKeyValueIfDefined('Evidence-based', program.evidenceBased)}
-      ${showKeyValueIfDefined('Cultural responsiveness', program.culturalResponsiveness)}
-      ${showKeyValueIfDefined('Alignment', aligned)}
-      ${showKeyValueIfDefined('Feasibility', feasible)}
-      ${showKeyValueIfDefined('Content Focus', contentFocus)}
+      ${showKeyValueIfDefined("Evidence-based", program.evidenceBased)}
+      ${showKeyValueIfDefined(
+        "Cultural responsiveness",
+        program.culturalResponsiveness
+      )}
+      ${showKeyValueIfDefined("Alignment", aligned)}
+      ${showKeyValueIfDefined("Feasibility", feasible)}
+      ${showKeyValueIfDefined("Content Focus", contentFocus)}
       <h2>Publication Information</h2>
-      ${showKeyValueIfDefined('Est. time Required 1<sup>st</sup> grade', timeRequiredFirstGrade)}
-      ${showKeyValueIfDefined('Company', program.company)}
-      ${showKeyValueIfDefined('Owners', program.owners)}
-      ${showKeyValueIfDefined('Advertised alongside', program.advertisedAlongside)}
-      ${showKeyValueIfDefined('Year of publication', program.yearOfPublication)}
-      ${showKeyValueIfDefined('Year of last update', program.yearOfLastUpdate)}
+      ${showKeyValueIfDefined(
+        "Est. time Required 1<sup>st</sup> grade",
+        timeRequiredFirstGrade
+      )}
+      ${showKeyValueIfDefined("Company", program.company)}
+      ${showKeyValueIfDefined("Owners", program.owners)}
+      ${showKeyValueIfDefined(
+        "Advertised alongside",
+        program.advertisedAlongside
+      )}
+      ${showKeyValueIfDefined("Year of publication", program.yearOfPublication)}
+      ${showKeyValueIfDefined("Year of last update", program.yearOfLastUpdate)}
+      <h2>Topic Coverage</h2>
+      ${formatTopicsScale(program)}
+      <p style="margin-top: 20px;"></p>
     `;
 };
 
