@@ -137,7 +137,7 @@ time required 1st grade| 90
 available grade levels | K-5
 year of publication | 2022
 integration opportunities|33%
-topic coverage|
+topic coverage|W, V, C
 
 
 id|OC
@@ -209,7 +209,7 @@ time required 1st grade| 35-65
 available grade levels | K-5
 year of publication | 2023
 integration opportunities|36%
-topic coverage|
+topic coverage|W, V, C
 
 
 id|ZB
@@ -245,7 +245,7 @@ time required 1st grade| unclear
 available grade levels | K-5
 year of publication | 2021
 integration opportunities|
-topic coverage|
+topic coverage| W, R, C
 
 
 id|FP
@@ -263,7 +263,7 @@ time required 1st grade| 60
 available grade levels | K-10
 year of publication | 2021
 integration opportunities|37%
-topic coverage|
+topic coverage|R, V, F, C
 
 
 id|WR
