@@ -15,8 +15,12 @@ body {
   flex-grow: 1;
   gap: 3ex;
 }
-#map-container {
+#map-container, #details, #faqs, #glossary {
   background-color: #eee;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+#map-container {
   display: flex;
   flex-direction: column;
   flex-basis: 75%;
@@ -25,7 +29,9 @@ body {
   width: 100%;
 }
 #header {
+  display: flex;
   flex-grow: 0;
+  justify-content: space-between;
 }
 #header h1 {
   text-align: center;
@@ -82,7 +88,6 @@ body {
   fill: #ffeb98 !important;
 }
 #details {
-  background-color: #eee;
   flex-basis: 50%;
   padding: 1ex;
 }
@@ -204,7 +209,6 @@ body {
 }
 
 #faqs, #glossary {
-  background-color: #eee;
   margin: 3ex auto;
   max-width: 1000px;
 }
