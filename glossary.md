@@ -61,28 +61,30 @@ layout: default
     <div class="definition">
         <h3><a name="cr">Cultural Responsiveness</a></h3>
 
-        <p>Cultural Responsiveness is most often measured using the Culturally Responsive Curriculum Scorecard, developed and validated by The Education Justice Research and Organizing Collaborative (EJ-ROC) at New York University.  The ELA scorecard can be accessed for free and used with groups of educators and community members to rate cultural responsiveness in a given context.  The ratings incorporated here come from a report issued by the scorecard creators in collaboration with a multistakeholder, multiperspectival group considering the curriculum options under consideration in NYC at the time.</p>
+        <p>Cultural Responsiveness is most often measured using the Culturally Responsive Curriculum Scorecard, developed and validated by <a href="https://steinhardt.nyu.edu/metrocenter/ejroc">The Education Justice Research and Organizing Collaborative (EJ-ROC)</a> at New York University.  The <a href="https://steinhardt.nyu.edu/metrocenter/ejroc/culturally-responsive-english-language-arts-curriculum-scorecard">ELA scorecard</a> can be accessed for free and used with groups of educators and community members to rate cultural responsiveness in a given context.  The ratings incorporated here come from <a href="https://steinhardt.nyu.edu/metrocenter/ejroc/lessons-inequity-evaluation-cultural-responsiveness-elementary-ela-curriculum">a report</a> issued by the scorecard creators in collaboration with a multistakeholder, multiperspectival group considering the curriculum options under consideration in NYC at the time.</p>
     </div>
 
     <div class="definition">
         <h3><a name="ca">CCSS-Alignment and Feasibility</a></h3>
 
-        <p>CCSS-alignment and feasibility ratings are drawn from EdReports profiles using these criteria:
-        CCSS-alignment - Gateway 1
-        Feasibility - Gateway 2
-        EdReports prioritizes CCSS-alignment and will not continue to rate programs that do not demonstrate alignment according to their criteria. This requires curricula to pre-select texts or example texts that will be used in each lesson so that grade-level complexity can be assessed.  Curricula that leave significant room for individual teachers or students to select texts or topics cannot be rating and therefore earn no or low ratings.</p>
+        <p>CCSS-alignment and feasibility ratings are drawn from <a href="https://edreports.org/">EdReports</a> profiles using these criteria:
+        <ul>
+            <li><a href="https://cdn.edreports.org/reviewtools/ag9zfmVkcmVwb3J0cy13ZWJyIAsSB1N1YmplY3QYGwwLEgpSZXZpZXdUb29sGLG_80AM/review-tool.pdf?_gl=1*adt070*_gcl_au*NzAzMTc4OTg3LjE3MDY0NTE0MjA.">CCSS-alignment - Gateway 1</a></li>
+            <li><a href="https://cdn.edreports.org/reviewtools/ag9zfmVkcmVwb3J0cy13ZWJyIAsSB1N1YmplY3QYGwwLEgpSZXZpZXdUb29sGLG_80AM/review-tool.pdf?_gl=1*adt070*_gcl_au*NzAzMTc4OTg3LjE3MDY0NTE0MjA.">Feasibility - Gateway 2</a></li>
+        </ul>
+        EdReports prioritizes CCSS-alignment and will not continue to rate programs that do not demonstrate alignment according to their criteria. This requires curricula to pre-select texts or example texts that will be used in each lesson so that grade-level complexity can be assessed.  Curricula that leave significant room for individual teachers or students to select texts or topics cannot be rated and therefore earn no or low ratings.</p>
     </div>
 
     <div class="definition">
         <h3><a name="cf">Content focus</a></h3>
 
-        <p>Content focus is reported using the ELA Knowledge Maps created by Johns Hopkins University’s Institute for Education Policy.</p>
+        <p>Content focus is reported using the <a href="https://education.jhu.edu/edpolicy/k-12-education-solutions/ela-knowledge-map/">ELA Knowledge Maps</a> created by Johns Hopkins University’s Institute for Education Policy.</p>
     </div>
 
     <div class="definition">
         <h3><a name="ca">Classification Accuracy</a></h3>
 
-        <p>Classification accuracy is reported using ratings from the National Center on Intensive Intervention’s academic screening tools chart.</p>
+        <p>Classification accuracy is reported using ratings from the National Center on Intensive Intervention’s <a href="https://intensiveintervention.org/resource/academic-screening-tools-chart">academic screening tools chart</a>.</p>
     </div>
 
     <div class="definition">

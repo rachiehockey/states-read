@@ -9,6 +9,9 @@ body {
   margin: 0;
   padding: 1ex;
 }
+a {
+  text-decoration: none;
+}
 #main {
   display: flex;
   flex-direction: row;
