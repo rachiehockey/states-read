@@ -3,12 +3,15 @@ import {
   clearDetails,
   enterTableMode,
   formatSingleStatePill,
+  getSortFunction,
   highlightStates,
   showKeyValueIfDefined,
 } from "./util.js";
 import { states, getNumberOfStatesWithAnyProgramApprovals } from "./states.js";
 
+
 let programs;
+let currentSortFunction = getSortFunction('name');
 
 class Program {
   constructor(id, name) {
@@ -21,6 +24,7 @@ class Program {
     this.topics = [];
     this.qualityIndicators = [];
     this.negativeQualityIndicators = [];
+    this.timeRequiredFirstGradeMinutes = 0;
   }
 }
 
@@ -252,16 +256,16 @@ export const comparePrograms = () => {
     <h1>Programs</h1>
     <table>
       <tr class="header">
-        <th class="odd">Name</th>
-        <th class="even">Company</th>
-        <th class="odd">Advertised alongside</th>
-        <th class="even">Owners</th>
-        <th class="odd">Time<br/>required<br/>(minutes)</th>
-        <th class="even">Year of<br/>publication</th>
-        <th class="odd">Topics</th>
-        <th class="even">Quality indicator</th>
+        <th class="odd" onclick="sortProgramsOn('name')">Name</th>
+        <th class="even" onclick="sortProgramsOn('company')">Company</th>
+        <th class="odd" onclick="sortProgramsOn('advertisedAlongside')">Advertised alongside</th>
+        <th class="even" onclick="sortProgramsOn('owners')">Owners</th>
+        <th class="odd" onclick="sortProgramsOn('timeRequiredFirstGradeMinutes')">Time<br/>required<br/>(minutes)</th>
+        <th class="even" onclick="sortProgramsOn('yearOfPublication')">Year of<br/>publication</th>
+        <th class="odd" onclick="sortProgramsOn('topics')">Topics</th>
+        <th class="even" onclick="sortProgramsOn('qualityIndicator')">Quality indicator</th>
       </tr>
-    ${Object.values(programs).map(formatProgramRowInTable).join("\n")}
+    ${Object.values(programs).sort(currentSortFunction).map(formatProgramRowInTable).join("\n")}
     </table>
   `;
 };
@@ -275,5 +279,11 @@ const showProgram = (id) => {
   setDetails(formatProgramDetails(id));
 };
 
+const sortProgramsOn = (key) => {
+  currentSortFunction = getSortFunction(key);
+  comparePrograms();
+};
+
 window.showProgram = showProgram;
 window.comparePrograms = comparePrograms;
+window.sortProgramsOn = sortProgramsOn;

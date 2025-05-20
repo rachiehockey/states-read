@@ -2,6 +2,28 @@ export const HIGHLIGHT_CLASS = "highlight";
 export const HOVER_CLASS = "hover";
 export const SELECTED_CLASS = "selected";
 
+export const getSortFunction = (field) => {
+  if (field === 'timeRequiredFirstGradeMinutes') {
+    return (a, b) => {
+      if (!b.timeRequiredFirstGradeMinutes) {
+        return -1;
+      }
+      if (!a.timeRequiredFirstGradeMinutes) {
+        return 1;
+      }
+      return a.timeRequiredFirstGradeMinutes > b.timeRequiredFirstGradeMinutes ? 1 : -1
+    };
+  }
+  return (a, b) => {
+    if (!b[field]) {
+      return 1;
+    }
+    if (!a[field]) {
+      return -1;
+    }
+    return a[field].toLowerCase() > b[field].toLowerCase() ? 1 : -1;
+  }
+};
 export const enterTableMode = () => {
   document.getElementById('map-container').style.display = 'none';
   document.getElementById('details').style.display = 'none';

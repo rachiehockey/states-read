@@ -149,7 +149,11 @@ a {
   border-collapse: collapse;
 }
 #table-container th {
+  cursor: pointer;
   text-align: left;
+}
+#table-container th:hover {
+  background-color: yellow;
 }
 #table-container tr {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
