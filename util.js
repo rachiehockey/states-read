@@ -29,6 +29,7 @@ const clearMapState = () => {
   clearStateHighlights();
   clearStateHover();
   clearStateSelected();
+  clearDetails();
   // Hide popup
   const el = document.getElementById("popup");
   el.style.display = "none";

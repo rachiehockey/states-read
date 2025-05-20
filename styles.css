@@ -117,14 +117,14 @@ a {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.assessment-pill {
-  background-color: #eee;
+.pill:hover {
+  color: white;
 }
 .state-pill {
   background-color: #5fe97c;
 }
 .assessment-pill {
-  background-color: #83b6ff;
+  background-color: #c9dfff;
 }
 .program-pill {
   background-color: #ffb5b5;
