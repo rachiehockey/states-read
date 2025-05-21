@@ -11,6 +11,29 @@ const numberOrNumberRangeFields = [
 ];
 
 export const getSortFunction = (field) => {
+  if (field === 'qualityIndicators') {
+    return (a, b) => {
+      if (!b[field]) {
+        return -1;
+      }
+      if (!a[field]) {
+        return 1;
+      }
+      return (a.qualityIndicators.length - a.negativeQualityIndicators.length) >
+          (b.qualityIndicators.length - b.negativeQualityIndicators.length) ? -1 : 1;
+    };
+  }
+  if (field === 'subtests' || field === 'topics') {
+    return (a, b) => {
+      if (!b[field]) {
+        return -1;
+      }
+      if (!a[field]) {
+        return 1;
+      }
+      return a[field].length > b[field].length ? -1 : 1;
+    };
+  }
   if (numberOrNumberRangeFields.includes) {
     return (a, b) => {
       if (!b[field]) {

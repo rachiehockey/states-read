@@ -124,7 +124,7 @@ const processMap = (mapEl) => {
 };
 
 const elementIsInMap = (el) => {
-  while (el !== document.body) {
+  while (!!el && el !== document.body) {
     if (el.getAttribute("id") === "map-container") {
       return true;
     }

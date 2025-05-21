@@ -275,7 +275,7 @@ export const comparePrograms = () => {
         <th class="odd" onclick="sortProgramsOn('timeRequiredFirstGradeMinutes')">Time<br/>required<br/>(minutes)</th>
         <th class="even" onclick="sortProgramsOn('yearOfPublication')">Year of<br/>publication</th>
         <th class="odd" onclick="sortProgramsOn('topics')">Topics</th>
-        <th class="even" onclick="sortProgramsOn('qualityIndicator')">Quality indicator</th>
+        <th class="even" onclick="sortProgramsOn('qualityIndicators')">Quality indicator</th>
       </tr>
     ${Object.values(programs).sort(currentSortFunction).map(formatProgramRowInTable).join("\n")}
     </table>
