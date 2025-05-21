@@ -29,21 +29,33 @@ class Program {
 }
 
 const TOPICS = {
-  P: "Phonemic awareness",
+  // P: "Phonemic awareness",
+  // W: "Word Work",
+  // G: "Grammar",
+  // R: "Writing",
+  // V: "Vocabulary",
+  // F: "Fluency",
+  // C: "Reading Comprehension",
+  P: "Pho&shy;ne&shy;mic aware&shy;ness",
   W: "Word Work",
-  G: "Grammar",
-  R: "Writing",
-  V: "Vocabulary",
-  F: "Fluency",
-  C: "Reading Comprehension",
+  G: "Gram&shy;mar",
+  R: "Wri&shy;ting",
+  V: "Voca&shy;bu&shy;lary",
+  F: "Flu&shy;ency",
+  C: "Rea&shy;ding Com&shy;pre&shy;hen&shy;sion",
 };
 
 const QUALITY_INDICATORS = {
-  E: 'Evidence',
-  R: 'Cultural responsiveness',
-  A: 'Alignment to standards',
-  F: 'Feasibility',
-  C: 'Content focus',
+  // E: 'Evidence',
+  // R: 'Cultural responsiveness',
+  // A: 'Alignment to standards',
+  // F: 'Feasibility',
+  // C: 'Content focus',
+  E: 'Evi&shy;dence',
+  R: 'Cul&shy;tu&shy;ral res&shy;pon&shy;sive&shy;ness',
+  A: 'Alignment to stan&shy;dards',
+  F: 'Fea&shy;sibi&shy;lity',
+  C: 'Con&shy;tent fo&shy;cus',
 };
 
 export const processProgramData = (raw) => {

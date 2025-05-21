@@ -2,24 +2,55 @@ export const HIGHLIGHT_CLASS = "highlight";
 export const HOVER_CLASS = "hover";
 export const SELECTED_CLASS = "selected";
 
+const numberFields = [
+  'timeRequiredFirstGradeMinutes'
+];
+
+const numberOrNumberRangeFields = [
+  'timeRequired'
+];
+
 export const getSortFunction = (field) => {
-  if (field === 'timeRequiredFirstGradeMinutes') {
+  if (numberOrNumberRangeFields.includes) {
     return (a, b) => {
-      if (!b.timeRequiredFirstGradeMinutes) {
+      if (!b[field]) {
         return -1;
       }
-      if (!a.timeRequiredFirstGradeMinutes) {
+      if (!a[field]) {
         return 1;
       }
-      return a.timeRequiredFirstGradeMinutes > b.timeRequiredFirstGradeMinutes ? 1 : -1
+      let averageA = 0;
+      let averageB = 0;
+      if (a[field].length === 2) {
+        averageA = 0.5 * (a[field][0] + a[field][1]);
+      } else {
+        averageA = a[field];
+      }
+      if (b[field].length === 2) {
+        averageB = 0.5 * (b[field][0] + b[field][1]);
+      } else {
+        averageB = b[field];
+      }
+      return averageA > averageB ? 1 : -1
+    };
+  }
+  if (numberFields.includes(field)) {
+    return (a, b) => {
+      if (!b[field]) {
+        return -1;
+      }
+      if (!a[field]) {
+        return 1;
+      }
+      return a[field] > b[field] ? 1 : -1
     };
   }
   return (a, b) => {
     if (!b[field]) {
-      return 1;
+      return -1;
     }
     if (!a[field]) {
-      return -1;
+      return 1;
     }
     return a[field].toLowerCase() > b[field].toLowerCase() ? 1 : -1;
   }

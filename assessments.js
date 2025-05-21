@@ -13,6 +13,14 @@ import {
 } from "./states.js";
 
 const SUBTESTS = {
+  // P: "Phonemic awareness",
+  // R: "Rapid automatized naming",
+  // L: "Letter-sound correspondence",
+  // S: "Single-word reading",
+  // N: "Nonsense-word reading",
+  // O: "Oral passage reading fluency",
+  // E: "Spelling",
+  // M: "Comprehension",
   P: "Pho&shy;ne&shy;mic awa&shy;re&shy;ness",
   R: "Rapid auto&shy;ma&shy;ti&shy;zed naming",
   L: "Let&shy;ter-sound cor&shy;respon&shy;dence",
@@ -168,9 +176,11 @@ const formatAssessmentDetails = (id) => {
 const formatAssessmentRowInTable = (assessment) => {
   let timeRequired = "";
   if (assessment.timeRequired) {
-    timeRequired = !!assessment.timeRequired.length
-      ? assessment.timeRequired[0] + " — " + assessment.timeRequired[1]
-      : assessment.timeRequired;
+    if (!!assessment.timeRequired.length) {
+      timeRequired = assessment.timeRequired[0] + " — " + assessment.timeRequired[1];
+    } else {
+      timeRequired = assessment.timeRequired;
+    }
   }
   return `
     <tr>
