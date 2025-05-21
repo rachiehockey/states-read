@@ -28,7 +28,7 @@ Coverage of recommended skill areas| P, L, E, S, N, O
 
 id|AM
 name|Amira
-states|AZ,CT,IN,KY,MD,MA,NE,ND,OK,SC,WA,WV
+states|AZ,IN,KY,MD,MA,NE,ND,OK,SC,WA,WV
 publisher| Amira Learning
 parent company| Houghton Mifflin Harcourt
 owners|Veritas Capital
