@@ -265,6 +265,7 @@ export const comparePrograms = () => {
 
   document.getElementById("table-container").innerHTML = `
     <div onclick="enterMapMode()" style="cursor: pointer">⬅️ Back to Map</div>
+    <p>(Click on column headers to sort)</p>
     <h1>Programs</h1>
     <table>
       <tr class="header">

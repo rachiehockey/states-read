@@ -190,7 +190,8 @@ const formatAssessmentRowInTable = (assessment) => {
       <td class="even">${assessment.owners || ""}</td>
       <td class="odd">${timeRequired}</td>
       <td class="even">${assessment.availableGradeLevels || ""}</td>
-      <td class="odd">${formatSubtestsScale(assessment)}</td>
+      <td class="odd">${assessment.alignmentToOtherAssessments || ""}</td>
+      <td class="even">${formatSubtestsScale(assessment)}</td>
     </tr>
   `;
 };
@@ -219,6 +220,7 @@ export const compareAssessments = () => {
 
   document.getElementById("table-container").innerHTML = `
     <div onclick="enterMapMode()" style="cursor: pointer">⬅️ Back to Map</div>
+    <p>(Click on column headers to sort)</p>
     <h1>Assessments</h1>
     <table>
       <tr class="header">
@@ -228,7 +230,8 @@ export const compareAssessments = () => {
         <th class="even" onclick="sortAssessmentsOn('owners')">Owners</th>
         <th class="odd" onclick="sortAssessmentsOn('timeRequired')">Time<br/>required<br/>(minutes)</th>
         <th class="even" onclick="sortAssessmentsOn('availableGradeLevels')">Available<br/>grade<br/>levels</th>
-        <th class="odd" onclick="sortAssessmentsOn('subtests')">Assessed areas</th>
+        <th class="odd" onclick="sortAssessmentsOn('alignmentToOtherAssessments')">Alignment<br />to other<br />assessments</th>
+        <th class="even" onclick="sortAssessmentsOn('subtests')">Assessed areas</th>
       </tr>
     ${Object.values(assessments).sort(currentSortFunction).map(formatAssessmentRowInTable).join("\n")}
     </table>

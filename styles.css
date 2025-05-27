@@ -218,16 +218,13 @@ a {
   flex-basis: calc(100% / 5);
 }
 
+
+.topics-scale-element.on,
 .subtests-scale-element.on {
   background-color: #2868c5;
   color: white;
 }
 
-.subtests-scale-element.on {
-  background-color: #2868c5;
-}
-
-.topics-scale-element.on,
 .qualityindicator-scale-element.on {
   background-color: #029900;
   color: white;
