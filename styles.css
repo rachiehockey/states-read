@@ -229,12 +229,12 @@ a {
 
 .topics-scale-element.on,
 .qualityindicator-scale-element.on {
-  background-color: #bb2323;
+  background-color: #029900;
   color: white;
 }
 
 .qualityindicator-scale-element.neg {
-  background-color: #4f0808;
+  background-color: #930000;
   color: white;
 }
 
