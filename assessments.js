@@ -159,7 +159,7 @@ const formatAssessmentDetails = (id) => {
       )}
       ${showKeyValueIfDefined("Advertised alongside", assessment.advertisedAlongside)}
       ${showKeyValueIfDefined("Alignment to other assessment", assessment.alignmentToOtherAssessments)}
-      <h2>Subtests offered</h2>
+      <h2>Assessed areas</h2>
       ${formatSubtestsScale(assessment)}
       <p style="margin-top: 20px;"></p>
       ${showKeyValueIfDefined(
@@ -228,7 +228,7 @@ export const compareAssessments = () => {
         <th class="even" onclick="sortAssessmentsOn('owners')">Owners</th>
         <th class="odd" onclick="sortAssessmentsOn('timeRequired')">Time<br/>required<br/>(minutes)</th>
         <th class="even" onclick="sortAssessmentsOn('availableGradeLevels')">Available<br/>grade<br/>levels</th>
-        <th class="odd" onclick="sortAssessmentsOn('subtests')">Word-level skills</th>
+        <th class="odd" onclick="sortAssessmentsOn('subtests')">Assessed areas</th>
       </tr>
     ${Object.values(assessments).sort(currentSortFunction).map(formatAssessmentRowInTable).join("\n")}
     </table>
