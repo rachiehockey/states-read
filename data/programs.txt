@@ -70,7 +70,7 @@ available grade levels | K-5
 year of publication | 2025
 integration opportunities|
 topic coverage|
-quality indicators|E, A, F, C
+quality indicators| E, A, F, C
 
 
 id|WW
@@ -88,7 +88,7 @@ time required 1st grade| 90
 available grade levels | K-5
 year of publication | 2016
 integration opportunities|
-topic coverage|
+topic coverage| V, F, C
 quality indicators|-R, A, F, C
 
 
@@ -182,7 +182,7 @@ time required 1st grade| 120-180
 available grade levels | K-5
 year of publication | 2025
 integration opportunities|
-topic coverage|
+topic coverage| W,V,F,C
 quality indicators|-R, A, F
 
 
@@ -202,7 +202,7 @@ available grade levels | K-12
 year of publication | 2017
 integration opportunities|
 topic coverage|
-quality indicators| E, A, F
+quality indicators|E, A, F
 
 
 id|BR
