@@ -47,14 +47,14 @@ name|DIBELS 8th Edition/ mClass
 states|AL,AK,AZ,CO,CT,DC,IN,KS,KY,LA,ME,MD,MA,MI,MN,MS,NE,NC,ND,OH,OK,OR,SC,TN,TX,WA,WV,WY
 publisher| Amplify
 parent company|
-owners| Major investors include Leearn Capital, Emerson Collective, A-Street Ventures
+owners| Major investors include Learn Capital, Emerson Collective, A-Street Ventures
 advertised alongside| DIBELS Data System
 available grade levels| K-8
 assessment type| fixed-question
 time required| 8-10
 alignment to other assessments| DIBELS Next, Iowa Assessment of Basic Skills
 National Center for Intensive Intervention Rating for Fall of 1st grade| n/a
-Coverage of recommended skill areas:| P, L, S, O, N, M
+Coverage of recommended skill areas| P, L, S, O, N, M
 
 id|EC
 name|easyCBM
@@ -68,7 +68,7 @@ assessment type| fixed-question
 time required| 25-40
 alignment to other assessments| DIBELS
 National Center for Intensive Intervention Rating for Fall of 1st grade| N/A
-Coverage of recommended skill areas:| L, P, S, M
+Coverage of recommended skill areas| L, P, S, M
 
 id|FB
 name|FastBridge
