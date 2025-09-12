@@ -3,7 +3,7 @@ name|Into Reading
 company|Houghton Mifflin Harcourt
 owners| Veritas Capital
 advertised alongside| ¡Arriba la Lectura!; Amira Learning
-states|CO,CT,TN,AR,OH,WI, VA
+states|CO,CT,TN,AR,OH,WI,VA,OK
 evidence-based| No independent, peer-reviewed studies. Ongoing efforts to examine effects unclear.
 aligned|meets
 feasible|meets
@@ -22,7 +22,7 @@ name|Wonders
 company| McGraw Hill Education
 owners| Platinum Equity
 evidence-based| Qualifying studies found no significant results. Ongoing efforts to examine effects are unclear.
-states| CO, CT, DC, TN, AR, OH, WI, VA
+states| CO, CT, DC, TN, AR, OH, WI, VA, OK
 aligned|meets
 feasible|meets
 content focus| not rated
@@ -59,7 +59,7 @@ name|Amplify CKLA
 company| Amplify
 owners| Emerson Collective
 advertised alongside| mclass, Boost Reading, Amplify Caminos, PD, digital resources
-states| CO, CT, TN, AR, OH, WI, VA
+states| CO, CT, TN, AR, OH, WI, VA, OK
 evidence-based| One peer-reviewed study focused on outcomes in grades 3-6. Other working papers indicate significant positive results in grades 3-6, and a NYC pilot study investigates K-2.
 aligned| me
 feasible| me
@@ -97,7 +97,7 @@ name|Benchmark Advance
 company| Benchmark Education Company
 owners| family-owned
 advertised alongside| Professional development, additional phonics & additional EL resources
-states| CO, CT, DC, TN, OH, WI, VA
+states| CO, CT, DC, TN, OH, WI, VA, OK
 evidence-based| No independent, peer-reviewed studies. Ongoing efforts to examine effects are not clear.
 aligned| me
 feasible| me
@@ -115,7 +115,7 @@ name|Benchmark Workshop
 company| Benchmark Education Company
 owners| family-owned
 advertised alongside| Professional development, intervention
-states| CO, DC, AR, OK
+states| CO, DC, AR
 evidence-based| No independent, peer-reviewed studies. Ongoing efforts to examine effects are not clear.
 aligned| me
 feasible| me
@@ -172,7 +172,7 @@ name|myView Literacy
 company| Savvas Learning
 owners| Nexus Capital Management
 advertised alongside| savvas realize, savvas one
-states| CO, CT, OH, WI, VA
+states| CO, CT, OH, WI, VA, OK
 evidence-based| No independent, peer-reviewed studies. Ongoing efforts to examine effects are not clear.
 aligned| meets
 feasible| meets
@@ -229,7 +229,7 @@ name|Superkids reading Program
 company| Zaner Bloser
 owners| Highlights for Children
 advertised alongside| none
-states| CO, AR, VA
+states| CO, AR, VA, OK
 evidence-based| no studies
 aligned| partially
 feasible| not rated
