@@ -17,7 +17,7 @@ a {
   flex-direction: row;
   flex-grow: 1;
 }
-#map-container, #details, #legend, #faqs, #glossary, #table-container {
+#map-container, #details, #legend, #faqs, #glossary, #table-container, #aboutus {
   background-color: #eee;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 10px;
@@ -240,7 +240,7 @@ a {
   max-width: 1000px;
 }
 
-#faqs h2, #glossary h2 {
+#faqs h2, #glossary h2, #aboutus h2 {
   text-align: center;
 }
 
