@@ -172,7 +172,7 @@ name|myView Literacy
 company| Savvas Learning
 owners| Nexus Capital Management
 advertised alongside| savvas realize, savvas one
-states| CO, CT, OH, WI, VA, OK
+states| CO, CT, OH, WI, VA, OK, MI
 evidence-based| No independent, peer-reviewed studies. Ongoing efforts to examine effects are not clear.
 aligned| meets
 feasible| meets
@@ -210,7 +210,7 @@ name|Being a Reader
 company| Center for the Collaborative Classroom
 owners| nonprofit
 advertised alongside| seeds of learning,
-states| CO, AR, WI
+states| CO, AR, WI, OH, MI
 evidence-based| none
 aligned| not rated
 feasible|  not rated
