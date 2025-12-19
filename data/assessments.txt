@@ -28,7 +28,7 @@ Coverage of recommended skill areas| P, L, E, S, N, O
 
 id|AM
 name|Amira
-states|AZ,IN,KY,MD,MA,NE,ND,OK,SC,WA,WV
+states|AZ,IN,KY,MD,MA,NE,ND,OK,SC,WA,WV,MI
 publisher| Amira Learning
 parent company| Houghton Mifflin Harcourt
 owners|Veritas Capital
@@ -44,7 +44,7 @@ Coverage of recommended skill areas| R, L, P, E, N, O, M
 
 id|DI
 name|DIBELS 8th Edition/ mClass
-states|AL,AK,AZ,CO,CT,DC,IN,KS,KY,LA,ME,MD,MA,MI,MN,MS,NE,NC,ND,OH,OK,OR,SC,TN,TX,WA,WV,WY
+states|AL,AK,AZ,CO,CT,DC,IN,KS,KY,LA,ME,MD,MA,MI,MN,MS,NE,NC,ND,OH,OK,OR,SC,TN,TX,WA,WV,WY,MI
 publisher| Amplify
 parent company|
 owners| Major investors include Learn Capital, Emerson Collective, A-Street Ventures
