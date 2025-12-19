@@ -3,7 +3,7 @@ name|Into Reading
 company|Houghton Mifflin Harcourt
 owners| Veritas Capital
 advertised alongside| ¡Arriba la Lectura!; Amira Learning
-states|CO,CT,TN,AR,OH,WI,VA,OK
+states|CO,CT,TN,AR,OH,WI,VA,OK, MI
 evidence-based| No independent, peer-reviewed studies. Ongoing efforts to examine effects unclear.
 aligned|meets
 feasible|meets
@@ -40,7 +40,7 @@ name|EL-Imagine Learning
 company|Imagine Learning
 owners| nonprofit
 advertised alongside| n/a
-states| CO, CT, TN, OH, WI, VA
+states| CO, CT, TN, OH, WI, VA, MI
 evidence-base |No independent, peer-reviewed studies. Ongoing efforts to examine effects in one site are described on the website as ongoing.
 aligned| me
 feasible| me
@@ -59,7 +59,7 @@ name|Amplify CKLA
 company| Amplify
 owners| Emerson Collective
 advertised alongside| mclass, Boost Reading, Amplify Caminos, PD, digital resources
-states| CO, CT, TN, AR, OH, WI, VA, OK
+states| CO, CT, TN, AR, OH, WI, VA, OK, MI
 evidence-based| One peer-reviewed study focused on outcomes in grades 3-6. Other working papers indicate significant positive results in grades 3-6, and a NYC pilot study investigates K-2.
 aligned| me
 feasible| me
@@ -78,7 +78,7 @@ name|Wit and Wisdom
 company| Great Minds PBC
 owners| Ibis Group
 advertised alongside| geodes, EurekaMath2, PhDScience, Arts&Letters
-states| CT, TN, AR, OH, WI, VA
+states| CT, TN, AR, OH, WI, VA, MI
 evidence-based| No independent, peer-reviewed studies. Ongoing efforts to examine effects are not clear.
 aligned| me
 feasible| me
