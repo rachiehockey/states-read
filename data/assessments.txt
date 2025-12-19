@@ -68,7 +68,7 @@ assessment type| fixed-question
 time required| 25-40
 alignment to other assessments| DIBELS
 National Center for Intensive Intervention Rating for Fall of 1st grade| N/A
-Coverage of recommended skill areas| L, P, S, M
+Coverage of recommended skill areas| L, P, S, M, O, R
 
 id|FB
 name|FastBridge
@@ -96,7 +96,7 @@ assessment type| computer-adaptive
 time required| 20-40
 alignment to other assessments| SMARTER Balanced, PARCC, and other state summative assesments inlcluding PSAT
 National Center for Intensive Intervention Rating for Fall of 1st grade| Partially Convincing Evidence of Classification Accuracy
-Coverage of recommended skill areas| P, L, S, M
+Coverage of recommended skill areas| P, L, S, M,
 
 id|MA
 name|MAP (NWEA)
@@ -128,7 +128,7 @@ Coverage of recommended skill areas| P, L, S, N, M
 
 id|IS
 name| Istation (ISIP)
-States| AL, AR, CO, ID, IA, IN, KY, MI, MS, MO, NE, OH, OK, WA, WV
+States| AL, AR, CO, ID, IA, IN, KY, MI, MS, MO, NE, OH, OK, WA, WV, MI
 Publisher| Amira
 Parent company| Houghton Mifflin Hartcourt
 Owner| veritas capital
