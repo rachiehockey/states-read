@@ -96,7 +96,7 @@ assessment type| computer-adaptive
 time required| 20-40
 alignment to other assessments| SMARTER Balanced, PARCC, and other state summative assesments inlcluding PSAT
 National Center for Intensive Intervention Rating for Fall of 1st grade| Partially Convincing Evidence of Classification Accuracy
-Coverage of recommended skill areas| P, L, S, M,
+Coverage of recommended skill areas| P, L, S, M
 
 id|MA
 name|MAP (NWEA)
