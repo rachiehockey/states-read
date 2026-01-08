@@ -13,7 +13,7 @@ time required 1st grade| 90
 available grade levels | K-6
 year of publication | 2022
 integration opportunities|31%
-topic coverage|W,V,F,C
+topic coverage|W, V, F, C
 quality indicators|-R, A, F, C
 
 
@@ -31,7 +31,7 @@ time required 1st grade| 60-75
 available grade levels | K-6
 year of publication | 2020
 integration opportunities|53%
-topic coverage| G,W,F,C
+topic coverage| G, W, F, C
 quality indicators|-E, -R, A, F
 
 
