@@ -69,7 +69,7 @@ time required 1st grade| 90-120
 available grade levels | K-5
 year of publication | 2025
 integration opportunities|
-topic coverage|
+topic coverage| W,V,F,C,P,G
 quality indicators| E, A, F, C
 
 
@@ -106,7 +106,7 @@ cultural responsiveness| not rated
 time required 1st grade| 90
 available grade levels | K-5
 year of publication | 2020
-topic coverage|
+topic coverage| W,V,F,C,P,G
 quality indicators|A,F
 
 
@@ -125,7 +125,7 @@ time required 1st grade|
 available grade levels | K-5
 year of publication | unknown
 integration opportunities|
-topic coverage|
+topic coverage| W,V,F,C,P,G
 quality indicators|
 
 
@@ -163,7 +163,7 @@ time required 1st grade| 60-75
 available grade levels | K-6
 year of publication | 2023
 integration opportunities|
-topic coverage|
+topic coverage|W,V,F,C,P,G
 quality indicators|-E, A, F, C
 
 
@@ -201,7 +201,7 @@ time required 1st grade| 60-140
 available grade levels | K-12
 year of publication | 2017
 integration opportunities|
-topic coverage|
+topic coverage| W,V,F,C,P,G
 quality indicators|E, A, F
 
 
@@ -239,7 +239,7 @@ time required 1st grade| 110-130
 available grade levels | K-2
 year of publication | 2025
 integration opportunities|33%
-topic coverage|
+topic coverage|W,V,F,C,P,G
 quality indicators|
 
 
