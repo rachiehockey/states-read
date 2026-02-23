@@ -40,7 +40,7 @@ name|EL-Imagine Learning
 company|Imagine Learning
 owners| nonprofit
 advertised alongside| n/a
-states| CO, CT, TN, OH, WI, VA, MI
+states| CO, CT, TN, OH, VA, MI
 evidence-base |No independent, peer-reviewed studies. Ongoing efforts to examine effects in one site are described on the website as ongoing.
 aligned| me
 feasible| me
@@ -97,7 +97,7 @@ name|Benchmark Advance
 company| Benchmark Education Company
 owners| family-owned
 advertised alongside| Professional development, additional phonics & additional EL resources
-states| CO, CT, DC, TN, OH, WI, VA, OK
+states| CO, CT, DC, TN, OH, VA, OK
 evidence-based| No independent, peer-reviewed studies. Ongoing efforts to examine effects are not clear.
 aligned| me
 feasible| me
@@ -153,7 +153,7 @@ name|Open Court
 company| McGraw Hill Education
 owners| Platinum Equity
 advertised alongside| Wonderworks, World of Wonders, Maravillas
-states| CO, CT, AR, WI, VA
+states| CO, CT, AR, VA
 evidence-based| 3 peer-reviewed studies, 2 with negative results, one neutral
 aligned| meets
 feasible| meets
@@ -172,7 +172,7 @@ name|myView Literacy
 company| Savvas Learning
 owners| Nexus Capital Management
 advertised alongside| savvas realize, savvas one
-states| CO, CT, OH, WI, VA, OK, MI
+states| CO, CT, OH, VA, OK, MI
 evidence-based| No independent, peer-reviewed studies. Ongoing efforts to examine effects are not clear.
 aligned| meets
 feasible| meets
@@ -191,7 +191,7 @@ name|ARC Core
 company| American Reading Company
 owners| employee-owned
 advertised alongside| none
-states| CO, CT, OH, WI
+states| CO, CT, OH,
 evidence-based| one study of Kindergarten
 aligned| meets
 feasible| meets
@@ -210,7 +210,7 @@ name|Being a Reader
 company| Center for the Collaborative Classroom
 owners| nonprofit
 advertised alongside| seeds of learning,
-states| CO, AR, WI, OH, MI
+states| CO, AR, OH, MI
 evidence-based| none
 aligned| not rated
 feasible|  not rated
