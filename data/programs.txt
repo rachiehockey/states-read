@@ -3,7 +3,7 @@ name|Into Reading
 company|Houghton Mifflin Harcourt
 owners| Veritas Capital
 advertised alongside| ¡Arriba la Lectura!; Amira Learning
-states|CO,CT,TN,AR,OH,WI,VA,OK, MI
+states|CO,CT,TN,AR,OH,WI,VA,OK,MI,UT
 evidence-based| No independent, peer-reviewed studies. Ongoing efforts to examine effects unclear.
 aligned|meets
 feasible|meets
@@ -22,7 +22,7 @@ name|Wonders
 company| McGraw Hill Education
 owners| Platinum Equity
 evidence-based| Qualifying studies found no significant results. Ongoing efforts to examine effects are unclear.
-states| CO, CT, DC, TN, AR, OH, WI, VA, OK
+states| CO, CT, DC, TN, AR, OH, WI, VA, OK, UT
 aligned|meets
 feasible|meets
 content focus| not rated
@@ -229,7 +229,7 @@ name|Superkids reading Program
 company| Zaner Bloser
 owners| Highlights for Children
 advertised alongside| none
-states| CO, AR, VA, OK
+states| CO, AR, VA, OK, UT
 evidence-based| no studies
 aligned| partially
 feasible| not rated
