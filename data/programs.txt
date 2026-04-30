@@ -191,7 +191,7 @@ name|ARC Core
 company| American Reading Company
 owners| employee-owned
 advertised alongside| none
-states| CO, CT, OH,
+states| CO, CT, OH, RI, UT
 evidence-based| one study of Kindergarten
 aligned| meets
 feasible| meets
